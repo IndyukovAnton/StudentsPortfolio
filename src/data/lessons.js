@@ -50,8 +50,8 @@ export const Lessons = {
 	"17": [
 		{
 			"author": "Илья Чертов", 
-			"link": "/src/pages/Ilya Chertov/index.html", 
-			"photoURL": "/src/images/projects/lesson__17/IlyaChertov.png", 
+			"link": "/StudentsPortfolio/src/pages/Ilya Chertov/index.html", 
+			"photoURL": "/StudentsPortfolio/src/images/projects/lesson__17/IlyaChertov.png", 
 			"comment": "\"Плавающий кораблик\" - Анимация"
 		}
 	],
