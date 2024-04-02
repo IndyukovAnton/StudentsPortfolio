@@ -35,13 +35,23 @@ body {
 	background-color: var(--lessons-bg);
 	position: fixed;
 	top: 0;
-	left: -380px;
+	left: -400px;
 	padding: 40px 60px;
 	transition: left 0.5s;
 	height: 600px;
 	overflow-y: hidden;
 }
 
+
+.open {
+	display: block;
+	left: 0;
+	overflow-y: scroll;
+}
+
+.close {
+	left: -400px;
+}
 
 .open__lessons {
 	display: none;
@@ -141,6 +151,10 @@ body {
 }
 
 @media (hover: hover) and (min-width: 1100px) {
+	.lessons {
+		left: -380px;
+	}
+	
 	.lessons__item a:hover{
 		color: var(--text-color);
 		padding-bottom: 5px;
@@ -181,10 +195,6 @@ body {
 	.open__lessons {
 		display: block;
 		z-index: 4;
-	}
-
-	.lessons {
-		display: none;
 	}
 
 	.lessons:hover {

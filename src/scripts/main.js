@@ -1,6 +1,6 @@
 import { Lessons } from "../data/lessons.js";
 
-const mainContainer = document.querySelector('.main__container')
+const postsContainer = document.querySelector('.main__posts')
 const mainTitle = document.querySelector('.main__title')
 
 const lessonsContainer = document.querySelector('.lessons')
@@ -16,7 +16,7 @@ function createPost(author, comment, photoURL, link) {
 	</div>
 	`.trim()
 
-	mainContainer.insertAdjacentHTML('beforeend', postHTML)
+	postsContainer.insertAdjacentHTML('beforeend', postHTML)
 }
 
 document.addEventListener('DOMContentLoaded', ()=> {
@@ -29,10 +29,12 @@ lessonsContainer.addEventListener('click', (e)=> {
 	if (e.target.classList.contains('lessons__item__link')) {
 		e.preventDefault();
 
-		lessons.classList.remove('open')
-		lessons.style.display = 'none'
-
 		mainTitle.textContent = e.target.textContent
+
+		lessonsContainer.classList.remove('open')
+		lessonsContainer.classList.add('close')
+
+		postsContainer.innerHTML = "";
 
 		let postData = Lessons[e.target.href.split('/')[3]]
 		postData.forEach(post => {

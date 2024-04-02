@@ -4,11 +4,9 @@ const lessons = document.querySelector('.lessons')
 button.addEventListener('click', ()=> {
 	if (lessons.classList.contains('open')) {
 		lessons.classList.remove('open')
-		lessons.style.display = 'none'
+		lessons.classList.add('close')
 	} else {
 		lessons.classList.add('open')
-		lessons.style.display = 'block'
-		lessons.style.left = '0';
-		lessons.style.overflowY = "scroll";
+		lessons.classList.remove('close')
 	}	
 })
