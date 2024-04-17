@@ -21,7 +21,12 @@ export const Lessons = {
 		
 	],
 	"8": [
-		
+		{
+			"author": "Тайлер Дерден", 
+			"link": "/StudentsPortfolio/src/pages/Tayler Derden/index.html", 
+			"photoURL": "/StudentsPortfolio/src/images/projects/lesson__8/TaylerDerden.png", 
+			"comment": "\"пока не знаю что сказать\""
+		}
 	],
 	"9": [
 		
