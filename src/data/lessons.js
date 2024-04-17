@@ -6,7 +6,12 @@ export const Lessons = {
 		
 	],
 	"3": [
-		
+		{
+			"author": "Тайлер Дерден", 
+			"link": "/StudentsPortfolio/src/pages/Tayler Derden/lesson__3/index.html", 
+			"photoURL": "/StudentsPortfolio/src/images/projects/lesson__3/TaylerDerden.png", 
+			"comment": "\"Без комментария\""
+		}
 	],
 	"4": [
 		
@@ -23,7 +28,7 @@ export const Lessons = {
 	"8": [
 		{
 			"author": "Тайлер Дерден", 
-			"link": "/StudentsPortfolio/src/pages/Tayler Derden/index.html", 
+			"link": "/StudentsPortfolio/src/pages/Tayler Derden/lesson__8/index.html", 
 			"photoURL": "/StudentsPortfolio/src/images/projects/lesson__8/TaylerDerden.png", 
 			"comment": "\"пока не знаю что сказать\""
 		}
@@ -55,7 +60,7 @@ export const Lessons = {
 	"17": [
 		{
 			"author": "Илья Чертов", 
-			"link": "/StudentsPortfolio/src/pages/Ilya Chertov/index.html", 
+			"link": "/StudentsPortfolio/src/pages/Ilya Chertov/lesson__17/index.html", 
 			"photoURL": "/StudentsPortfolio/src/images/projects/lesson__17/IlyaChertov.png", 
 			"comment": "\"Плавающий кораблик\" - Анимация"
 		}
