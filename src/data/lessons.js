@@ -28,19 +28,20 @@ export const Lessons = {
 	13: [],
 	14: [],
 	15: [],
-	16: [],
+	16: [
+		{
+			author: 'Тайлер Дерден',
+			link: './src/pages/Tayler Derden/lesson__16/index.html',
+			photoURL: './src/images/projects/lesson__16/TaylerDerden.png',
+			comment: '"Без комментария"',
+		},
+	],
 	17: [
 		{
 			author: 'Илья Чертов',
 			link: './src/pages/Ilya Chertov/lesson__17/index.html',
 			photoURL: './src/images/projects/lesson__17/IlyaChertov.png',
 			comment: '"Плавающий кораблик" - Анимация',
-		},
-		{
-			author: 'Тайлер Дерден',
-			link: './src/pages/Tayler Derden/lesson__16/index.html',
-			photoURL: './src/images/projects/lesson__16/TaylerDerden.png',
-			comment: '"Без комментария"',
 		},
 		{
 			author: 'Тайлер Дерден',
