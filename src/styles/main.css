@@ -84,7 +84,7 @@ body {
 	height: 48px;
 	padding: 10px;
 	margin: 10px 10px 0 0;
-	background: url('../images/icons/icon__menu-burger.svg') no-repeat center center;
+	background: url('../src/images/icons/icon__menu-burger.svg') no-repeat center center;
 	background-size: cover;
 	border: none;
 	right: 0;
