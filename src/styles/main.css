@@ -20,7 +20,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	background: url('StudentsPortfolio/src/images/bg_main-photo.jpg') no-repeat center center;
+	background: url('../src/images/bg_main-photo.jpg') no-repeat center center;
 	background-size: cover;
 }
 
