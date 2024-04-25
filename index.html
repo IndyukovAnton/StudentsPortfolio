@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Student portfolio</title>
-	<link rel="stylesheet" href="./src/styles/main.css">
+	<link rel="stylesheet" href="/src/styles/main.css">
 </head>
+
 <body>
-	<button class="open__lessons"></button>
+	<header class="header">
+		<button class="open__lessons"></button>
+	</header>
 	<aside class="lessons">
-		<h2 class="lessons__title">Занятия</h2>
+		<h2 class="lessons__title">Темы</h2>
 		<ol class="lessons__list">
 			<li class="lessons__item"><a class='lessons__item__link' href="/1">Тема 1</a></li>
 			<li class="lessons__item"><a class='lessons__item__link' href="/2">Тема 2</a></li>
@@ -42,18 +46,22 @@
 			<li class="lessons__item"><a class='lessons__item__link' href="/29">Тема 29</a></li>
 			<li class="lessons__item"><a class='lessons__item__link' href="/30">Тема 30</a></li>
 			<li class="lessons__item"><a class='lessons__item__link' href="/31">Тема 31</a></li>
-			<li class="lessons__item"><a class='lessons__item__link' href="/32">Тема 32</a></li>
+			<li class="lessons__item"><a class='lessons__item__link' href="/32">Итоговые проекты</a></li>
 		</ol>
 	</aside>
 	<section class="main">
 		<section class="main__container container">
-			<h1 class="main__title">Тема 1</h1>
+			<h1 class="main__title">Работы учеников</h1>
 			<div class="main__posts"></div>
 		</section>
 	</section>
-	<footer class="footer"></footer>
+	<footer class="footer">
+		<p class="footer__info">Материал распространяется в свободном доступе, но не для использования в коммерческих
+			целях.</p>
+	</footer>
 
 	<script src='./src/scripts/main.js' type='module'></script>
 	<script src='./src/scripts/open__lessons.js'></script>
 </body>
+
 </html>
