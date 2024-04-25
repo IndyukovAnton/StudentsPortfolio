@@ -36,6 +36,18 @@ export const Lessons = {
 			photoURL: './src/images/projects/lesson__17/IlyaChertov.png',
 			comment: '"Плавающий кораблик" - Анимация',
 		},
+		{
+			author: 'Тайлер Дерден',
+			link: './src/pages/Tayler Derden/lesson__17_1/index.html',
+			photoURL: './src/images/projects/lesson__17/TaylerDerden_road.png',
+			comment: '"Без комментария"',
+		},
+		{
+			author: 'Тайлер Дерден',
+			link: './src/pages/Tayler Derden/lesson__17_2/index.html',
+			photoURL: './src/images/projects/lesson__17/TaylerDerden_ship.png',
+			comment: '"Без комментария"',
+		},
 	],
 	18: [],
 	19: [],

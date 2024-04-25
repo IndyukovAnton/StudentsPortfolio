@@ -134,6 +134,12 @@ body {
 	text-transform: uppercase;
 }
 
+.main__posts {
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 20px;
+}
+
 /* POST */
 
 .post {
