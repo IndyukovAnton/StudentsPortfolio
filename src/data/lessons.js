@@ -38,14 +38,14 @@ export const Lessons = {
 		},
 		{
 			author: 'Тайлер Дерден',
-			link: './src/pages/Tayler Derden/lesson__17_1/index.html',
-			photoURL: './src/images/projects/lesson__17/TaylerDerden_road.png',
+			link: './src/pages/Tayler Derden/lesson__16/index.html',
+			photoURL: './src/images/projects/lesson__16/TaylerDerden.png',
 			comment: '"Без комментария"',
 		},
 		{
 			author: 'Тайлер Дерден',
-			link: './src/pages/Tayler Derden/lesson__17_2/index.html',
-			photoURL: './src/images/projects/lesson__17/TaylerDerden_ship.png',
+			link: './src/pages/Tayler Derden/lesson__17/index.html',
+			photoURL: './src/images/projects/lesson__17/TaylerDerden.png',
 			comment: '"Без комментария"',
 		},
 	],
