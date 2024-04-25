@@ -1,6 +1,20 @@
 export const Lessons = {
-	1: [],
-	2: [],
+	1: [
+		{
+			author: 'Тайлер Дерден',
+			link: './src/pages/Tayler Derden/lesson__1/index.html',
+			photoURL: './src/images/projects/lesson__1/TaylerDerden.png',
+			comment: '"Без комментария"',
+		},
+	],
+	2: [
+		{
+			author: 'Тайлер Дерден',
+			link: './src/pages/Tayler Derden/lesson__2/index.html',
+			photoURL: './src/images/projects/lesson__2/TaylerDerden.png',
+			comment: '"Без комментария"',
+		},
+	],
 	3: [
 		{
 			author: 'Тайлер Дерден',
@@ -9,10 +23,38 @@ export const Lessons = {
 			comment: '"Без комментария"',
 		},
 	],
-	4: [],
-	5: [],
-	6: [],
-	7: [],
+	4: [
+		{
+			author: 'Тайлер Дерден',
+			link: './src/pages/Tayler Derden/lesson__4/index.html',
+			photoURL: './src/images/projects/lesson__4/TaylerDerden.png',
+			comment: '"Без комментария"',
+		},
+	],
+	5: [
+		{
+			author: 'Тайлер Дерден',
+			link: './src/pages/Tayler Derden/lesson__5/index.html',
+			photoURL: './src/images/projects/lesson__5/TaylerDerden.png',
+			comment: '"Без комментария"',
+		},
+	],
+	6: [
+		{
+			author: 'Тайлер Дерден',
+			link: './src/pages/Tayler Derden/lesson__6/index.html',
+			photoURL: './src/images/projects/lesson__6/TaylerDerden.png',
+			comment: '"Без комментария"',
+		},
+	],
+	7: [
+		{
+			author: 'Тайлер Дерден',
+			link: './src/pages/Tayler Derden/lesson__7/index.html',
+			photoURL: './src/images/projects/lesson__7/TaylerDerden.png',
+			comment: '"Без комментария"',
+		},
+	],
 	8: [
 		{
 			author: 'Тайлер Дерден',
@@ -21,13 +63,48 @@ export const Lessons = {
 			comment: '"пока не знаю что сказать"',
 		},
 	],
-	9: [],
+	9: [
+		{
+			author: 'Тайлер Дерден',
+			link: './src/pages/Tayler Derden/lesson__9/index.html',
+			photoURL: './src/images/projects/lesson__9/TaylerDerden.png',
+			comment: '"Без комментария"',
+		},
+	],
 	10: [],
-	11: [],
-	12: [],
-	13: [],
+	11: [
+		{
+			author: 'Тайлер Дерден',
+			link: './src/pages/Tayler Derden/lesson__11/index.html',
+			photoURL: './src/images/projects/lesson__11/TaylerDerden.png',
+			comment: '"Без комментария"',
+		},
+	],
+	12: [
+		{
+			author: 'Тайлер Дерден',
+			link: './src/pages/Tayler Derden/lesson__12/index.html',
+			photoURL: './src/images/projects/lesson__12/TaylerDerden.png',
+			comment: '"Без комментария"',
+		},
+	],
+	13: [
+		{
+			author: 'Тайлер Дерден',
+			link: './src/pages/Tayler Derden/lesson__13/index.html',
+			photoURL: './src/images/projects/lesson__13/TaylerDerden.png',
+			comment: '"Без комментария"',
+		},
+	],
 	14: [],
-	15: [],
+	15: [
+		{
+			author: 'Тайлер Дерден',
+			link: './src/pages/Tayler Derden/lesson__15/index.html',
+			photoURL: './src/images/projects/lesson__15/TaylerDerden.png',
+			comment: '"Без комментария"',
+		},
+	],
 	16: [
 		{
 			author: 'Тайлер Дерден',

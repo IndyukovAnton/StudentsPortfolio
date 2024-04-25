@@ -116,8 +116,7 @@ body {
 
 /* MAIN */
 .main {
-	margin-bottom: 100px;
-	padding: 0px 40px;
+	padding: 0px 40px 50px;
 	height: 100%;
 	overflow-y: auto;
 }
@@ -138,6 +137,13 @@ body {
 	display: grid;
 	grid-template-columns: 1fr;
 	row-gap: 20px;
+}
+
+.main__info {
+	font-size: 24px;
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 15px;
 }
 
 /* POST */

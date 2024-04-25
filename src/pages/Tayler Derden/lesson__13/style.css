@@ -1,0 +1,48 @@
+body{
+    background-color: #62C9EA;
+}
+
+main{
+    max-width: 400px;
+    margin:0 auto;
+}
+
+
+
+.main__login{
+    background-color: aliceblue;
+    width: 100%;   
+    color: #ADADAD;
+    font-size: 16px;
+    padding: 20px 0 20px 10px;
+    border: none;
+    margin-bottom: 20px;
+
+}
+
+.main__password{
+    background-color: aliceblue;
+    width: 100%;   
+    color: #ADADAD;
+    font-size: 16px;
+    padding: 20px 0 20px 10px;
+    
+}
+
+h1{
+    text-align: center;
+    font-size: 48px;
+    font-family: "Poppins", sans-serif;
+}
+
+button {
+    margin: 40px 150px;
+    background-color: #28FBC8;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    width: 100px;
+    height: 30px;
+    border: none;
+}
