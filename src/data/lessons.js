@@ -141,5 +141,12 @@ export const Lessons = {
 	29: [],
 	30: [],
 	31: [],
-	32: [],
+	32: [
+		{
+			author: 'Zaka',
+			link: './src/pages/Zaka/lesson__32/pages/index.html',
+			photoURL: './src/images/projects/lesson__32/Zaka.png',
+			comment: '"Название игры "Защити дом"',
+		},
+	],
 };
