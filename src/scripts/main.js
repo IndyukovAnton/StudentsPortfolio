@@ -1,4 +1,5 @@
 import {Lessons} from '../data/lessons.js';
+import {search} from './search.js';
 
 const postsContainer = document.querySelector('.main__posts');
 const mainTitle = document.querySelector('.main__title');
@@ -19,6 +20,13 @@ function createPost(author, comment, photoURL, link) {
 
 const lessonsContainer = document.querySelector('.lessons');
 
+function loadPosts(posts) {
+	postsContainer.innerHTML = '';
+	posts.forEach((post) => {
+		createPost(post.author, post.comment, post.photoURL, post.link);
+	});
+}
+
 lessonsContainer.addEventListener('click', (e) => {
 	if (e.target.classList.contains('lessons__item__link')) {
 		e.preventDefault();
@@ -28,11 +36,14 @@ lessonsContainer.addEventListener('click', (e) => {
 		lessonsContainer.classList.remove('open');
 		lessonsContainer.classList.add('close');
 
-		postsContainer.innerHTML = '';
-
 		let postData = Lessons[e.target.href.split('/')[3]];
-		postData.forEach((post) => {
-			createPost(post.author, post.comment, post.photoURL, post.link);
-		});
+		loadPosts(postData)
 	}
 });
+
+
+const searchField = document.querySelector('.search');
+
+searchField.addEventListener('input', (e)=> {
+	loadPosts(search(Lessons, e.currentTarget.value))
+})
