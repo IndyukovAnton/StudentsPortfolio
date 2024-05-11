@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(211, 206, 236);
+}
+
+h2{
+    text-align: center;
+    font-size: 48px;
+
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.input{
+    width:100%;
+    padding: 10px;
+}
+
+
+button{
+    background-color: chartreuse;
+    margin: 0 auto;
+    display: block;
+}
+
+.block-4{
+    text-align: center;
+}
+
+.block-5{
+    text-align: center;
+    font-size: 52px;
+    color: rgb(9, 207, 19);
+}

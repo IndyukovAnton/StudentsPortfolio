@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(170, 165, 165);
+    color: cornsilk;
+}
+
+.container{
+    max-width: 400px;
+    box-shadow: 20px 2px #000;
+    margin: 0 auto;
+}
+
+.h2{
+    font-size: 32px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 56px;
+    text-wrap: nowrap;
+    text-align: center;
+}
+
+p{
+    text-align: left;
+    font-size: 16px;
+}
+
+button{
+    margin: auto 30px;
+    background-color: gold;
+    text-align: left;
+    color: black;
+    border-radius: 4px;
+}

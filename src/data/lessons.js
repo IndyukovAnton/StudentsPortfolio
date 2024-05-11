@@ -2,7 +2,7 @@ export const Lessons = {
 	1: [
 		{
 			author: 'Тайлер Дерден',
-			link: './src/pages/Tayler Derden/lesson__1/index.html',
+			link: './src/pages/Tayler_Derden/lesson__1/index.html',
 			photoURL: './src/images/projects/lesson__1/TaylerDerden.png',
 			comment: '"Без комментария"',
 		},
@@ -10,7 +10,7 @@ export const Lessons = {
 	2: [
 		{
 			author: 'Тайлер Дерден',
-			link: './src/pages/Tayler Derden/lesson__2/index.html',
+			link: './src/pages/Tayler_Derden/lesson__2/index.html',
 			photoURL: './src/images/projects/lesson__2/TaylerDerden.png',
 			comment: '"Без комментария"',
 		},
@@ -18,7 +18,7 @@ export const Lessons = {
 	3: [
 		{
 			author: 'Тайлер Дерден',
-			link: './src/pages/Tayler Derden/lesson__3/index.html',
+			link: './src/pages/Tayler_Derden/lesson__3/index.html',
 			photoURL: './src/images/projects/lesson__3/TaylerDerden.png',
 			comment: '"Без комментария"',
 		},
@@ -26,7 +26,7 @@ export const Lessons = {
 	4: [
 		{
 			author: 'Тайлер Дерден',
-			link: './src/pages/Tayler Derden/lesson__4/index.html',
+			link: './src/pages/Tayler_Derden/lesson__4/index.html',
 			photoURL: './src/images/projects/lesson__4/TaylerDerden.png',
 			comment: '"Без комментария"',
 		},
@@ -34,7 +34,7 @@ export const Lessons = {
 	5: [
 		{
 			author: 'Тайлер Дерден',
-			link: './src/pages/Tayler Derden/lesson__5/index.html',
+			link: './src/pages/Tayler_Derden/lesson__5/index.html',
 			photoURL: './src/images/projects/lesson__5/TaylerDerden.png',
 			comment: '"Без комментария"',
 		},
@@ -42,7 +42,7 @@ export const Lessons = {
 	6: [
 		{
 			author: 'Тайлер Дерден',
-			link: './src/pages/Tayler Derden/lesson__6/index.html',
+			link: './src/pages/Tayler_Derden/lesson__6/index.html',
 			photoURL: './src/images/projects/lesson__6/TaylerDerden.png',
 			comment: '"Без комментария"',
 		},
@@ -50,7 +50,7 @@ export const Lessons = {
 	7: [
 		{
 			author: 'Тайлер Дерден',
-			link: './src/pages/Tayler Derden/lesson__7/index.html',
+			link: './src/pages/Tayler_Derden/lesson__7/index.html',
 			photoURL: './src/images/projects/lesson__7/TaylerDerden.png',
 			comment: '"Без комментария"',
 		},
@@ -58,7 +58,7 @@ export const Lessons = {
 	8: [
 		{
 			author: 'Тайлер Дерден',
-			link: './src/pages/Tayler Derden/lesson__8/index.html',
+			link: './src/pages/Tayler_Derden/lesson__8/index.html',
 			photoURL: './src/images/projects/lesson__8/TaylerDerden.png',
 			comment: '"пока не знаю что сказать"',
 		},
@@ -66,7 +66,7 @@ export const Lessons = {
 	9: [
 		{
 			author: 'Тайлер Дерден',
-			link: './src/pages/Tayler Derden/lesson__9/index.html',
+			link: './src/pages/Tayler_Derden/lesson__9/index.html',
 			photoURL: './src/images/projects/lesson__9/TaylerDerden.png',
 			comment: '"Без комментария"',
 		},
@@ -75,7 +75,7 @@ export const Lessons = {
 	11: [
 		{
 			author: 'Тайлер Дерден',
-			link: './src/pages/Tayler Derden/lesson__11/index.html',
+			link: './src/pages/Tayler_Derden/lesson__11/index.html',
 			photoURL: './src/images/projects/lesson__11/TaylerDerden.png',
 			comment: '"Без комментария"',
 		},
@@ -83,7 +83,7 @@ export const Lessons = {
 	12: [
 		{
 			author: 'Тайлер Дерден',
-			link: './src/pages/Tayler Derden/lesson__12/index.html',
+			link: './src/pages/Tayler_Derden/lesson__12/index.html',
 			photoURL: './src/images/projects/lesson__12/TaylerDerden.png',
 			comment: '"Без комментария"',
 		},
@@ -91,16 +91,22 @@ export const Lessons = {
 	13: [
 		{
 			author: 'Тайлер Дерден',
-			link: './src/pages/Tayler Derden/lesson__13/index.html',
+			link: './src/pages/Tayler_Derden/lesson__13/index.html',
 			photoURL: './src/images/projects/lesson__13/TaylerDerden.png',
 			comment: '"Без комментария"',
 		},
+		{
+			author: 'Лев Яшин',
+			link: './src/pages/Lev_Yashin/lesson__13/index.html',
+			photoURL: './src/images/projects/lesson__13/LevYashin.png',
+			comment: '"Форма регистрации"',
+		}
 	],
 	14: [],
 	15: [
 		{
 			author: 'Тайлер Дерден',
-			link: './src/pages/Tayler Derden/lesson__15/index.html',
+			link: './src/pages/Tayler_Derden/lesson__15/index.html',
 			photoURL: './src/images/projects/lesson__15/TaylerDerden.png',
 			comment: '"Без комментария"',
 		},
@@ -108,7 +114,7 @@ export const Lessons = {
 	16: [
 		{
 			author: 'Тайлер Дерден',
-			link: './src/pages/Tayler Derden/lesson__16/index.html',
+			link: './src/pages/Tayler_Derden/lesson__16/index.html',
 			photoURL: './src/images/projects/lesson__16/TaylerDerden.png',
 			comment: '"Без комментария"',
 		},
@@ -116,13 +122,13 @@ export const Lessons = {
 	17: [
 		{
 			author: 'Илья Чертов',
-			link: './src/pages/Ilya Chertov/lesson__17/index.html',
+			link: './src/pages/Ilya_Chertov/lesson__17/index.html',
 			photoURL: './src/images/projects/lesson__17/IlyaChertov.png',
 			comment: '"Плавающий кораблик" - Анимация',
 		},
 		{
 			author: 'Тайлер Дерден',
-			link: './src/pages/Tayler Derden/lesson__17/index.html',
+			link: './src/pages/Tayler_Derden/lesson__17/index.html',
 			photoURL: './src/images/projects/lesson__17/TaylerDerden.png',
 			comment: '"Без комментария"',
 		},
