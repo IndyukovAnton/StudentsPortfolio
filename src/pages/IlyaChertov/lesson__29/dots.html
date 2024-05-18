@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Точки</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        canvas {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="800" height="600"></canvas>
+
+    <script>
+        const canvas = document.getElementById('myCanvas')
+        const ctx = canvas.getContext('2d')
+
+        const generateRandomPoint = () => {
+            const x = Math.random() * canvas.width
+            const y = Math.random() * canvas.height
+            const r = Math.floor(Math.random() * 256)
+            const g = Math.floor(Math.random() * 256)
+            const b = Math.floor(Math.random() * 256)
+            ctx.fillStyle = `rgb(${r}, ${g}, ${b})`
+            ctx.fillRect(x, y, 32, 32);
+        }
+
+        document.addEventListener('click', generateRandomPoint)
+    </script>
+</body>
+</html>

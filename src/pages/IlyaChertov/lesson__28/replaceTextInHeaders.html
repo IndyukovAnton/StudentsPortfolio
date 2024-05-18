@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>script</title>
+</head>
+<body>
+    <h2>Заголовок 1</h2>
+    <h2>Заголовок 2</h2>
+    <h2>Заголовок 3</h2>
+    <h2>Заголовок 4</h2>
+    <h2>Заголовок 5</h2>
+    <h2>Заголовок 6</h2>
+    <h2>Заголовок 7</h2>
+    <h2>Заголовок 8</h2>
+    <h2>Заголовок 9</h2>
+    <h2>Заголовок 10</h2>
+    <button onclick='run()'>Запустить</button>
+    <script>
+        var headers = document.querySelectorAll('h2');
+
+        function run() {
+            headers.forEach(header => {
+                header.textContent = 'Заменено!'
+            })
+        }
+
+    </script>
+</body>
+</html>

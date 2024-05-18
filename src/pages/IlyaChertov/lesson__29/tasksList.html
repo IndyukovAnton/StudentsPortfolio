@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список дел</title>
+    <style>
+        .task-card {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px #62ff00;
+        }
+
+        #taskInput {
+            padding: 10px;
+            width: 160px;
+        }
+        
+        .btn{
+            padding: 10px;
+            color: #ffffff;
+            background-color: #0080ff;
+        }
+
+        .btn__remove{
+            color: red;
+            background-color: #fff200;
+        }
+    </style>
+</head>
+<body>
+    <h1>Список дел</h1>
+    <input type="text" id="taskInput" placeholder="Введите название задачи">
+    <button onclick="addTask()" class="btn">Добавить задачу</button>
+    <ul id="taskList">
+        <!-- Задачи будут добавлены здесь -->
+    </ul>
+
+    <script>
+        function addTask() {
+            const taskInput = document.getElementById("taskInput")
+            let taskText = taskInput.value.trim()
+            if (taskText === "") {
+                alert("Введите название задачи")
+                return;
+            }
+            const taskList = document.getElementById("taskList")
+            const taskCard = document.createElement("li")
+            taskCard.className = "task-card"
+            taskCard.innerHTML = `<span>${taskText}</span> <button onclick="removeTask(this)" class='btn__remove'>Удалить</button>`;
+            taskList.appendChild(taskCard)
+            taskInput.value = ""
+        }
+
+        function removeTask(button) {
+            const taskCard = button.parentElement
+            const taskList = document.getElementById("taskList")
+            taskList.removeChild(taskCard)
+        }
+    </script>
+</body>
+</html>

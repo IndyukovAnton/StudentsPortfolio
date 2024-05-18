@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devichre-width, initial-scale=1.0">
+    <link rel="icon" href="icon.png">
+    <meta name="author" content="chertov ilya">
+    <meta name="description" content="Это сайт где я рассказываю о себе">
+    <meta name="keywords" content="о себе, ilya, ilya chertov, о себе">
+    <title>Илья Чертов: о себе</title>
+</head>
+<body class="block__0">
+    <header>
+        <nav>
+            <section class="nav">
+                <a href="#чемяувлекаюсь">Чем я увлекаюсь?...</a>
+                
+                <a href="#моинавыки">Мои навыки...</a>
+                
+                <a href="#проекты">Мои проекты...</a>
+               
+                <a href="#ссылка">Ссылка на мой вк...</a>
+                
+                <a href="#заказ">Заказать сайт...</a>
+            </section>
+        </nav>
+    </header>
+    <style>
+        .block__1{
+            min-width: 500px;
+            min-height: 300px;
+            color: blue;
+        }
+        .block__2{
+            min-width: 200px;
+            min-height: 130px;
+            color: crimson;
+        }
+        .block__3{
+            min-width: 400px; ;
+            min-height: 130px;
+            color: maroon;
+        }
+        .block__4{
+            min-width: 400px; ;
+            min-height: 390px;
+            color: black;
+        }
+        .block__5{
+            min-width: 400px; ;
+            min-height: 230px;
+            color: black;
+        }
+        .block__0{
+            background-color: chartreuse;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .container {
+	        margin: 0 auto;
+        }
+
+        .auto-slider {
+            background-color: #bababa;
+            overflow-x: hidden;
+        }
+        .auto-slider__container {
+            display: flex;
+            padding: 20px 10px;
+            gap: 40px;
+            animation: slide 5s 0s linear infinite;
+            position: relative;
+            left: -800px;
+        }
+        .auto-item {
+            position: relative;
+            font-size: 24px;
+            text-wrap: nowrap;
+            padding: 0 10px;
+        }
+
+        .auto-slider__container:hover{
+            -o-animation-play-state: paused; 
+            -moz-animation-play-state: paused; 
+            -webkit-animation-play-state: paused; 
+            animation-play-state: paused; 
+        }
+
+
+        @keyframes slide {
+            from {
+                left: -800px;
+            }
+
+            to {
+                left: 2px;
+            }
+        }
+        
+        .nav{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+        }
+    </style>
+    <main>
+        <section id="чемяувлекаюсь" class="block__1">
+            <h1>Илья Чертов</h1>
+            <a href="https://vk.com/id814137681">Ссылка на мой вк</a>
+            <hr>
+            <h2>Обо мне</h2>
+            <p>Привет мне 12 лет зовут Илья, я хорошо учусь</p>
+            <p>
+            <strong>Чем я увлекаюсь:</strong> я увлекаюсь программированием, танцами 
+            </p>
+            <hr>
+            <p>
+            <strong>Что я умею делать:</strong> умею кататься на коньках, танцевать, рыбачить 
+            </p>
+            <hr>
+            <p>
+            <strong>Какие языки я знаю:</strong> я изучаю английский язык, язык программирования Python, JavaScript
+            </p>
+            <hr>
+        </section>        
+        <section id="моинавыки" class="block__2">    
+            <h2>Мои навыки</h2>            
+                <p>Программирование</p>
+                <p>Танец</p>
+                <p>Вождение автомобиля</p>
+                <p>Катание на коньках</p>          
+        </section>    
+            <hr>
+        <section id="проекты" class="block__3">    
+            <h2>Мои проекты</h2>
+            <ul type="circle">
+                <p>Графическая игра на Python</p>
+                <p>Выращивание кристаллов в домашних условиях</p>
+                <p>Выращивание ёлочки в домашних условиях</p>
+                <p>Проект про Гагарина</p>
+            </ul>
+        </section>
+        <section id="заказ" class="block__5">
+            <h2>Заказ сайта</h2>
+            <p>Здесь можно заказать сайт</p>
+            <form action="" method="post">
+                <label for="name">ФИО:</label>
+                <input name="name" type="text">
+                <br>
+                <br>
+                <label for="">Номер телефона:</label>
+                <input required name="numder" type="tel">
+                <br>
+                <br>        
+                <textarea cols="30" rows="2" placeholder="Добавьте сообщение/пожелание:"></textarea>
+                <br>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+        <section>
+            <h3>Фотографии сделанных работ по курсу</h3>
+            <div class="container">
+                <div class="auto-slider">
+                    <div class="auto-slider__container">
+                        <div class="auto-item auto-item_1"><a href="../з6/з 6.1.html"><img src="https://101hvost.ru/wp-content/uploads/2020/06/2-40.jpg" alt="Фото 1"></a></div>
+                        <div class="auto-item auto-item_5"><a href="../з12/з12.2.html"><img src="https://must-see.top/wp-content/uploads/2018/06/sosnovye-lentochnye-bory-700x465.jpg" alt="Фото 1"></a></div>
+                        <div class="auto-item auto-item_4"><a href="../з15/з 15.2.html"><img src="https://nsportal.ru/sites/default/files/2018/02/11/234938735.jpg" alt="Фото 1"></a></div>
+                        <div class="auto-item auto-item_3"><a href=""></a></div>
+                        <div class="auto-item auto-item_2"><a href=""></a></div>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </section>
+        <footer>
+            <nav>
+                <section class="nav">
+                    <a href="#чемяувлекаюсь">Чем я увлекаюсь?...</a>
+                   
+                    <a href="#моинавыки">Мои навыки...</a>
+                    
+                    <a href="#проекты">Мои проекты...</a>
+                    
+                    <a href="#ссылка">Ссылка на мой вк...</a>
+                    
+                    <a href="#заказ">Заказать сайт...</a>
+                </section>
+            </nav>
+        </footer>
+    </main>    
+</body>
+</html>

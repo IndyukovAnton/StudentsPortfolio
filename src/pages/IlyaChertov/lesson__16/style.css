@@ -1,0 +1,194 @@
+.container{
+    width: 800px;
+    height: 600px;
+    background-color: #3ca1da;
+    margin: 0 auto;    
+    position: relative;  
+}
+
+.grass{
+    width: 800px;
+    height: 130px;
+    background-color: #5cb233;    
+    position: absolute;
+    top: 468px;
+}
+
+.road{
+    background-color: #454544;
+    width: 114px;
+    height: 130px;
+    margin-left: 353px;
+    position: absolute;
+    top: 470px;
+}
+
+.sun{
+    background-color: #faff00;
+    width: 80px;
+    height: 80px;
+    margin-left: 628px;
+    top: 49px;
+    position: absolute;
+    border-radius: 100%;
+}
+
+.clouds{
+    position: absolute;
+    border-radius: 25px;
+    background-color: #ffffff;
+    height: 50px;
+}
+
+.cloud__1{
+    width: 120px;            
+    left: 35px;
+    top: 89px;    
+}
+
+.cloud__2{
+    width: 80px;   
+    left: 122px;
+    top: 121px;    
+}
+
+.cloud__3{
+    width: 120px;
+    left: 225px;
+    top: 85px;
+}
+
+.cloud__4{
+    width: 150px;
+    left: 360px;
+    top: 121px;
+}
+
+.cloud__5{
+    width: 100px;
+    left: 430px;
+    top: 35px;
+}
+
+.cloud__6{
+    width: 120px;
+    left: 557px;
+    top: 104px;
+}
+
+.cloud__7{
+    width: 120px;
+    left: 680px;
+    top: 35px;
+}
+
+.trees{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    background-color: #53ce19;
+    border-radius: 100%;
+}
+
+.ball__1{
+    left: 95px;
+    top: 379px;
+}
+
+.ball__2{
+    left: 193px;
+    top: 327px;
+}
+
+.ball__3{
+    left: 273px;
+    top: 289px;
+}
+
+.ball__4{
+    left: 467px;
+    top: 289px;
+}
+
+.ball__5{
+    left: 568px;
+    top: 327px;
+}
+
+
+.ball__5{
+    left: 568px;
+    top: 327px;
+}
+
+.ball__6{
+    left: 668px;
+    top: 379px;
+}
+
+.lines{
+    width: 20px;
+    height: 130px;
+    position: absolute;
+    background-color: #d9d9d9;
+}
+
+.line__1{
+    left: 125px;
+    top: 452px;
+}
+
+.line__2{
+    left: 223px;
+    top: 400px;
+}
+
+.line__3{
+    left: 303px;
+    top: 362px;
+}
+
+.line__4{
+    left: 497px;
+    top: 362px;
+}
+
+.line__5{
+    left: 598px;
+    top: 400px;
+}
+
+.line__6{
+    left: 698px;
+    top: 452px;
+}
+
+.block{
+    background-color: #ffffff;
+    position: absolute;
+    width: 8px;
+}
+
+.block__1{
+    height: 20px;
+    left: 406px;
+    top: 470px;
+}
+
+.block__2{
+    height: 30px;
+    left: 406px;
+    top: 503px;
+}
+
+.block__3{
+    height: 30px;
+    left: 406px;
+    top: 547px;
+}
+
+.block__4{
+    height: 10px;
+    left: 406px;
+    top: 590px;
+}

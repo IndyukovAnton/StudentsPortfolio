@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script</title>
+</head>
+<body>
+	<h1 title='Надпись от сайта' style='text-align: center;'>Чтобы посмотреть результат нажмите F12 и перейдите в консоль!</h1>
+    <script>
+        let user = {
+            'name':'Илья',
+            'age':12,
+            'city':'barnaul',
+            getName() {
+                return this.name
+            },
+            setName(name) {
+                this.name = name
+            },
+            getAge() {
+                return this.age
+            },
+            setAge(age) {
+                this.age = age
+            },
+            getCity() {
+                return this.city
+            },
+            setCity(city) {
+                this.city = city
+            },
+            getData() {
+                return [this.name,
+                    this.age,
+                    this.city
+                ]
+            }
+        }
+    
+        console.log(user)
+        console.dir(user)
+        
+    </script>
+</body>
+</html>

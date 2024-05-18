@@ -5,6 +5,11 @@ const postsContainer = document.querySelector('.main__posts');
 const mainTitle = document.querySelector('.main__title');
 
 function createPost(author, comment, photoURL, link) {
+
+	if (!photoURL) {
+		photoURL = './src/images/dummy.png';
+	}
+
 	const postHTML = `
 	<div class="post">
 		<a href="${link}" target="_blank" class="post__link"><img src="${photoURL}" alt="post__photo" class="post__photo"></a>

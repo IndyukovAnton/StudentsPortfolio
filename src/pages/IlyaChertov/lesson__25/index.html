@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script</title>
+</head>
+<body>
+	<h1 title='Надпись от сайта' style='text-align: center;'>Чтобы посмотреть результат нажмите F12 и перейдите в консоль!</h1>
+
+	<div style='max-width: 600px; margin: 0 auto' class="container">
+		<button onclick='task_1()'>Запустить 1-е задание</button>
+		<button onclick='task_2()'>Запустить 2-е задание</button>
+		<button onclick='task_3()'>Запустить 3-е задание</button>
+	</div>
+    <script>
+		function task_1() {
+			console.log('Задание 1:')
+			let nums=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+
+			for (let num of nums){
+				console.log(num)
+			}
+		}
+		function task_2() {
+			console.log('\nЗадание 2:')
+			let nums=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+
+			for (let num of nums){
+				if (num % 2 !== 0) {            
+					console.log(num);
+				}
+			}    
+			for (let num of nums){
+				if (num % 2 == 0) {
+				console.log(num);
+				}
+			}    
+		}
+
+		function task_3() {
+			while (true) {
+				let v=prompt('Закрыть окно?')
+				if (v=='да') {
+					break
+				}
+			}
+		}
+
+    </script>
+</body>
+</html>

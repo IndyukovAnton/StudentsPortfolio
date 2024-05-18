@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+	<h1 title='Надпись от сайта' style='text-align: center;'>Чтобы посмотреть результат нажмите F12 и перейдите в консоль!</h1>
+
+	<div style='max-width: 600px; margin: 0 auto' class="container">
+		<button onclick='task_1()'>Запустить 1-е задание</button>
+		<button onclick='task_3()'>Запустить 3-е задание</button>
+		<button onclick='task_4()'>Запустить 4-е задание</button>
+	</div>
+    <script>
+        let array = [true, 4, 4, "word", "10n"];
+
+		function task_1() {
+			console.log('Задание 1:')
+			function count(array) {
+				let count = 0;
+				for (let index = 0; index < array.length; index++) {
+					count += 1;
+				}
+				return count;
+			}
+	
+			console.log(`Количество элементов в массиве: ${count(array)}`)
+		}
+		function task_3() {
+			console.log('\nЗадание 3:')
+			function intUser(a,b) {
+				for (;a<b;a++) {
+					console.log(a)
+				}
+			}
+	
+			intUser(Number(prompt('Введите число')),Number(prompt('Введите число')) );
+		}
+
+		function task_4() {
+			console.log('\nЗадание 4:')
+
+			for(var i = 0 ; i< 10; i++) {
+				if(i**i>1000) {
+					console.log(i)
+				}
+			}
+		}
+
+
+    </script>
+</body>
+</html>

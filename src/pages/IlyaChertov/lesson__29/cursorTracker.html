@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script</title>
+</head>
+<body>
+    <style>
+        body {            
+            text-align: center;
+        }
+
+        .text {
+            font-size: 35px;
+            text-transform: uppercase;
+            color: rgb(0, 68, 255);
+            
+        }
+    </style>
+
+
+    <div id="text" class="text">
+        ___
+    </div>
+
+    <script>
+        const mouseElement = document.getElementById("text")
+
+        function updateMouse(event) {
+            const x = event.clientX
+            const y = event.clientY
+            mouseElement.textContent = `X: ${x}, Y: ${y}`
+        }
+
+        document.addEventListener("mousemove", updateMouse)
+    </script>
+</body>
+</html>
