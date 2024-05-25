@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Student portfolio</title>
 	<link rel="stylesheet" href="./src/styles/main.css">
+	<link rel="stylesheet" href="./src/styles/formAddWork.css">
 	<link rel="icon" href="./src/images/icons/icon.svg">
 </head>
 
@@ -19,9 +20,10 @@
 	
 	<aside class="lessons">
 		<h2 class="lessons__title">Темы</h2>
-		<ol class="lessons__list" start='0'>
-			<li class="lessons__item"><a class='lessons__item__link' href="/0">Интересные</a></li>
-			<li class="lessons__item"><a class='lessons__item__link' href="/1">Введение в Web. Знакомство с HTML</a></li>
+		<ol class="lessons__list">
+			<li type='none' class="lessons__item"><a class='lessons__item__link' href="/add-work">Предложить работу</a></li>
+			<li type='none' class="lessons__item"><a class='lessons__item__link' href="/0">Интересные</a></li>
+			<li value='1' class="lessons__item"><a class='lessons__item__link' href="/1">Введение в Web. Знакомство с HTML</a></li>
 			<li class="lessons__item"><a class='lessons__item__link' href="/2">Теги стилизации текста</a></li>
 			<li class="lessons__item"><a class='lessons__item__link' href="/3">Фотографии и ссылки. Блочные и строчные теги</a></li>
 			<li class="lessons__item"><a class='lessons__item__link' href="/4">Списки. Нумерованные, Маркированный, Выпадающий, список определений</a></li>
@@ -58,7 +60,7 @@
 	<main class="main">
 		<section class="main__container container">
 			<h1 class="main__title">Работы учеников</h1>
-			<div class="main__posts">
+			<div class="main__content">
 				<p class="main__info">
 					Здесь вы можете посмотреть работы учеников по нужной теме и подчеркнуть детали для своих.
 				</p>
@@ -79,6 +81,7 @@
 
 	<script src='./src/scripts/main.js' type='module'></script>
 	<script src='./src/scripts/open__lessons.js'></script>
+	<script src='./src/scripts/formAddWork.js'></script>
 </body>
 
 </html>

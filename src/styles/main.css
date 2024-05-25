@@ -154,7 +154,7 @@ body {
 	border-radius: 15px;
 }
 
-.main__posts {
+.main__content {
 	display: grid;
 	grid-template-columns: 1fr;
 	row-gap: 20px;

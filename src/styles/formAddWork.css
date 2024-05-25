@@ -1,0 +1,32 @@
+.add-work {
+	max-width: 800px;
+	width: 100%;
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+}
+
+.input_field {
+	padding: 10px 15px;
+	font-size: 18px;
+}
+
+.input__author {
+}
+
+.input__comment {
+}
+
+.input__wrapper {
+	display: flex;
+	flex-direction: column;
+	background-color: #ffffff;
+	padding: 20px;
+}
+
+.input__photo {
+}
+
+.input__file {
+}
