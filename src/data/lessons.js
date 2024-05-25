@@ -314,7 +314,14 @@ export const Lessons = {
 			comment: '"Без комментария',
 		},
 	],
-	30: [],
+	30: [
+		{
+			author: 'Илья Чертов',
+			link: './src/pages/IlyaChertov/lesson__30/index.html',
+			photoURL: null,
+			comment: '"Без комментария',
+		},
+	],
 	31: [],
 	32: [
 		{
@@ -322,6 +329,12 @@ export const Lessons = {
 			link: './src/pages/Zaka/lesson__32/pages/index.html',
 			photoURL: './src/images/projects/lesson__32/Zaka.png',
 			comment: '"Название игры "Защити дом"',
+		},
+		{
+			author: 'Илья Чертов',
+			link: './src/pages/IlyaChertov/lesson__32/index.html',
+			photoURL: './src/images/projects/lesson__32/IlyaChertov.png',
+			comment: '"Без комментария',
 		},
 	],
 };

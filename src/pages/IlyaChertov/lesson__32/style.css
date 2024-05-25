@@ -1,0 +1,98 @@
+*,
+*::before
+*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-image: url(images/top-view-school-supplies-assortment.jpg);
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(0, 34, 255);
+}
+
+p {
+    color: rgb(204, 0, 255);
+    text-align: center;
+}
+
+.calculator {
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    background: linear-gradient(#3f87,#5f71eb);
+    padding: 20px;
+    width: 500px;
+    height: 600px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.calculator #display {
+    width: 476px;
+    margin-bottom: 10px;
+    text-align: right;
+    padding: 10px;
+    height: 50px;
+    font-size: 35px;
+    background: linear-gradient( #48d2c7,#ffffff);
+    color: #000;
+    /* position: relative; */
+}
+
+#display+label {
+    font-size: 14px;
+    background-color: #FFF;
+}
+
+.calculator .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.calculator .buttons :hover {
+    transition: 90ms;
+    font-size: 40px;
+    color: #fff;
+    background: linear-gradient(rgb(192, 123, 192),rgb(102, 96, 96));
+    border: 2px solid gold;
+}
+
+.calculator button {
+    padding: 40px;
+    font-size: 32px;
+}
+
+.operators {
+    background: linear-gradient(#99ff00,rgb(109, 109, 239));
+    border: 2px solid rgb(255, 0, 0);
+}
+
+.number {
+    background: linear-gradient(gold,red);
+    border: 2px solid rgb(102, 255, 0);
+}
+
+.text {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.text textarea {
+    border: 2px solid rgb(0, 72, 255);
+}
+
+.secret {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 23px;
+}
+
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Форма заявки</h2>
+            <form action="#" method="post" id="form">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+                <input type="submit" value="Отправить">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var modal = document.getElementById("myModal")
+            var span = document.getElementsByClassName("close")[0]
+            var form = document.getElementById("form")
+
+            window.onload = function() {
+                modal.style.display = "block"
+            };
+
+            form.onsubmit = function(event) {
+                event.preventDefault()
+                console.log("Форма отправлена:")
+                console.log("Имя:", document.getElementById("name").value)
+                console.log("Email:", document.getElementById("email").value)
+                console.log("Сообщение:", document.getElementById("message").value)
+
+                modal.style.display = "none"
+            }
+
+            span.onclick = function() {
+                modal.style.display = "none"
+            }
+        })
+    </script>
+</body>
+</html>

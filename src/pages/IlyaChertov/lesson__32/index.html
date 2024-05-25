@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/dimensions_7392409.png">
+</head>
+<body>
+    <h1>Калькулятор</h1>
+    <p>Model: 56a24v3</p>
+    <div class="text">
+        <textarea rows="5" cols="40" placeholder="Поле для заметок"></textarea>
+    </div>
+    <br>
+    <div class="calculator">
+        <label for="display">100</label>        
+        <input type="text" name="display" id="display" disabled>
+        <div class="buttons">
+            <button class="operators" onclick="clearDisplay()">C</button>
+            <button class="number" onclick="appendToDisplay('1')">1</button>
+            <button class="number" onclick="appendToDisplay('2')">2</button>
+            <button class="number" onclick="appendToDisplay('3')">3</button>
+            <button class="operators" onclick="appendToDisplay('+')">+</button>
+            <button class="number" onclick="appendToDisplay('4')">4</button>
+            <button class="number" onclick="appendToDisplay('5')">5</button>
+            <button class="number" onclick="appendToDisplay('6')">6</button>
+            <button class="operators" onclick="appendToDisplay('-')">-</button>
+            <button class="number" onclick="appendToDisplay('7')">7</button>
+            <button class="number" onclick="appendToDisplay('8')">8</button>
+            <button class="number" onclick="appendToDisplay('9')">9</button>
+            <button class="operators" onclick="appendToDisplay('*')">*</button>
+            <button class="number" onclick="appendToDisplay('0')">0</button>
+            <button class="operators" onclick="calculateResult()">=</button>
+            <button class="operators" onclick="appendToDisplay('/')">/</button>
+        </div>
+    </div>
+    <br>
+    <div class="secret"><a href="page/index.html">Перейди</a></div>
+    <script src="script.js"></script>
+</body>
+</html>
