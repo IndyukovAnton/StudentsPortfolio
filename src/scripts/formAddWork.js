@@ -4,6 +4,9 @@ function showPhotoPreview(file) {
 	reader.readAsDataURL(file)
 	reader.onload = () => {
 		project_photo_preview.src = reader.result
+
+		const title = project_photo_wrapper.querySelector('label')
+		title.textContent = "Фото добавлено!"
 	}
 
 	reader.error= () => {
@@ -28,6 +31,10 @@ function showFileInfo(file) {
 	}
 }
 
+
+const project_photo_wrapper = document.querySelector('.input__photo-wrapper')
+const project_file_wrapper = document.querySelector('.input__file-wrapper')
+
 const project_photo_preview = document.querySelector('.photo__preview');
 const project_file_info = document.querySelector('.file__info');
 const button_add_project_photo = document.querySelector('.input__photo ')
@@ -48,8 +55,6 @@ function getToken() {
 
 async function sendProject(projectData) {
 	const _token = getToken()
-
-	console.log(_token)
 
 	const url = `https://api.telegram.org/bot${_token}`
 
@@ -94,6 +99,9 @@ button_add_project_file.addEventListener('change', (e)=> {
 	}
 
 	showFileInfo(e.target.files[0])
+
+	const title = project_file_wrapper.querySelector('label')
+	title.textContent = "Файл добавлен!"
 })
 
 addProjectForm.addEventListener('submit', (e)=> {

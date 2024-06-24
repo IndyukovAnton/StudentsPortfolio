@@ -23,6 +23,21 @@ body {
 	margin: 0 auto;
 }
 
+.back {
+	padding: 10px 20px;
+	background-color: #eeeeee;
+	border-radius: 20px;
+	text-decoration: none;
+	color: #000;
+	text-transform: uppercase;
+	font-weight: 600;
+	transition: 0.4s;
+	letter-spacing: 2px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
 /* LESSONS */
 
 .header .container{
