@@ -30,3 +30,8 @@
 
 .input__file {
 }
+
+.photo__preview {
+	max-width: 400px;
+	max-height: 400px;
+}

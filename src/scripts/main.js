@@ -32,34 +32,6 @@ function loadPosts(posts) {
 	});
 }
 
-// function loadFormAddWork() {
-// 	postsContainer.innerHTML = '';
-// 	return `
-// 	<form action="#" class="add-work">
-// 		<input type="text" placeholder='Автор' class='input__author input_field'>
-// 		<input type="text" placeholder='Комментарий' class='input__comment input_field'>
-// 		<div class="input__photo-wrapper input__wrapper">
-// 			<span>Добавьте фото</span>
-// 			<input type="file" style="display: none" id="getPhoto" class='input__photo'>
-// 			<button onclick="document.getElementById('getPhoto').click()">Выберите обложку</button>
-// 		</div>
-// 		<div class="input__file-wrapper input__wrapper">
-// 			<span>Добавьте проект</span>
-// 			<input type="file" style="display: none" id="getFile" class='input__file'>
-// 			<button onclick="document.getElementById('getFile').click()">Выберите файл</button>
-// 		</div>
-		
-// 	</form>
-// 	`
-// }
-
-function loadFormAddWorkDummy() {
-	postsContainer.innerHTML = '';
-	return `
-		<h2 style="text-align: center; font-size: 40px">Скоро...</h2>
-	`
-}
-
 lessonsContainer.addEventListener('click', (e) => {
 	if (e.target.classList.contains('lessons__item__link')) {
 		e.preventDefault();
@@ -73,10 +45,16 @@ lessonsContainer.addEventListener('click', (e) => {
 		let page = path[path.length - 1]
 
 		if (page == 'add-work') {
-			postsContainer.insertAdjacentHTML('beforeend', loadFormAddWorkDummy());
-		} else {
-			loadPosts(Lessons[page])
+			location.href = './src/pages/AddWork/index.html'
+			return
 		}
+
+		if (page == "tests") {
+			location.href = './src/pages/Tests/index.html'
+			return
+		}
+
+		loadPosts(Lessons[page])
 	}
 });
 
