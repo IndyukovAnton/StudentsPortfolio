@@ -41,8 +41,15 @@ async function request(url, data) {
 	})
 }
 
+function getToken() {
+	const _token = document.querySelector('.token').value
+	return _token
+}
+
 async function sendProject(projectData) {
-	const _token = "7413990657:AAGfq7gCJ3Ab3KuMvXgSXoJdahGzY2nVKXk"
+	const _token = getToken()
+
+	console.log(_token)
 
 	const url = `https://api.telegram.org/bot${_token}`
 
