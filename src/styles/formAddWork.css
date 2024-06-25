@@ -17,16 +17,11 @@
 .input_field {
 	padding: 10px 15px;
 	font-size: 18px;
+	border: none;
 }
 
 .input_field:focus {
 	outline: none;
-}
-
-.input__author {
-}
-
-.input__comment {
 }
 
 .input__wrapper {
@@ -37,20 +32,10 @@
 	padding: 20px;
 }
 
-.input__photo {
-}
-
 .input__file {
 	display: flex;
 	flex-direction: column;
 	row-gap: 20px;
-}
-
-.input__photo-wrapper {
-
-}
-
-.input__file-wrapper {
 }
 
 .photo__preview {
@@ -71,4 +56,19 @@
 
 .button__send:active {
 	background-color: #a7a7a7;
+}
+
+@media (max-width: 572px) {
+	body {
+		height: 100%;
+	}
+
+	.photo__preview {
+		max-width: 200px;
+		max-height: 200px;
+	}
+
+	.add-work {
+		row-gap: 5px;
+	}
 }

@@ -38,6 +38,12 @@ body {
 	left: 10px;
 }
 
+.dummy {
+	font-size: 48px;
+	text-align: center;
+	margin-top: 60px;
+}
+
 /* LESSONS */
 
 .header .container{
