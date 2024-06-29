@@ -5,20 +5,35 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Student Portfolio - Тесты</title>
 	<link rel="stylesheet" href="../../styles/main.css">
+	<link rel="stylesheet" href="../../styles/test.css">
 </head>
 <body>
 	<div class="container">
-		<a href="/" class="back">Вернуться</a>
-		<!-- <div class="settings">
-			<input type="radio" name='curse' class='settings__choose__curse'>
+		<a href="/StudentPortfolio/" class="back">Вернуться</a>
+		<div class="settings">
+			<input data-curse-id='0' type="radio" name='curse' class='settings__choose__curse'>
 			<label for="curse">HTML</label>
-			<input type="radio" name='curse' class='settings__choose__curse'>
+			<input data-curse-id='1' type="radio" name='curse' class='settings__choose__curse'>
 			<label for="curse">CSS</label>
-			<input type="radio" name='curse' class='settings__choose__curse'>
+			<input data-curse-id='2' type="radio" name='curse' class='settings__choose__curse'>
 			<label for="curse">JavaScript</label>
-		</div> -->
+		</div>
 
-		<h2 class='dummy'>Скоро...</h2>
+		<div class="test">
+			<h1 class="test__title">Тест по html</h1>
+			<p class="duration">Время прохождения: 30 минут</p>
+			<p class="test__points">Количество баллов: 10</p>
+			<p class="test__description">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae doloremque expedita vero dolorum, rem hic esse placeat quas reprehenderit dolores?
+			</p>
+			<div class="test__wrapper">
+				<p class="test__question">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, ut sint commodi consequatur repellendus quas qui fuga, praesentium et ducimus placeat vel debitis aspernatur obcaecati, libero ipsum quibusdam impedit explicabo.
+				</p>
+			</div>
+		</div>
 	</div>
+
+	<script src='../../scripts/test.js'></script>
 </body>
 </html>

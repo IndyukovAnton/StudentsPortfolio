@@ -1,0 +1,25 @@
+.settings {
+	background-color: #000;
+	color: #fff;
+	padding: 20px;
+	max-width: 400px;
+	display: flex;
+	column-gap: 20px;
+}
+.settings__choose__curse {
+}
+
+.test {
+}
+.test__title {
+}
+.duration {
+}
+.test__points {
+}
+.test__description {
+}
+.test__wrapper {
+}
+.test__question {
+}

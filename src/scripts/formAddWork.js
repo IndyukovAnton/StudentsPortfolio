@@ -63,6 +63,7 @@ async function sendProject(projectData) {
 	const caption = `
 	Автор: ${projectData.get('author')}\n
 	Комментарий: ${projectData.get('comment')}\n
+	Тема: ${projectData.get("theme")}\n
 	Дата: ${date}\n
 	`
 
