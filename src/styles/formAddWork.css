@@ -33,9 +33,15 @@
 }
 
 .input__file {
-	display: flex;
+	display: none;
 	flex-direction: column;
 	row-gap: 20px;
+}
+
+.file_add_method {
+	display: flex;
+	column-gap: 20px;
+	font-size: 20px;
 }
 
 .photo__preview {
