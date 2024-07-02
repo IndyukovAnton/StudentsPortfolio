@@ -1,25 +1,37 @@
-.settings {
-	background-color: #000;
-	color: #fff;
+.tests__wrapper {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	width: 100%;
+}
+.test__card__wrapper {
+	background-color: #ffffff;
 	padding: 20px;
-	max-width: 400px;
 	display: flex;
-	column-gap: 20px;
+	flex-direction: column;
+	row-gap: 15px;
 }
-.settings__choose__curse {
+.test__card__title {
+	font-size: 22px;
 }
-
-.test {
+.test__card__language {
+	font-size: 24px;
+	color: #43d14f;
 }
-.test__title {
+.test__card__description {
+	font-size: 18px;
 }
-.duration {
+.test__card__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	font-size: 18px;
 }
-.test__points {
+.test__card__author {
 }
-.test__description {
+.test__card__duration {
 }
-.test__wrapper {
+.test__card__score {
 }
-.test__question {
+.test__card__mode {
 }
