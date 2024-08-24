@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("https://t3.ftcdn.net/jpg/04/12/82/16/360_F_412821610_95RpjzPXCE2LiWGVShIUCGJSktkJQh6P.jpg")
+}
+.container {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;
+    margin: 20px;
+}
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+header h1 {
+    color: #333;
+}
+header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+section {
+    margin-bottom: 20px;
+}
+section h2 {
+    color: #555;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+section p, section ul{
+    color: #666;
+}

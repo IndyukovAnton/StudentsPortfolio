@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .tests__wrapper {
 	display: grid;
 	gap: 20px;
@@ -34,4 +35,79 @@
 .test__card__score {
 }
 .test__card__mode {
+=======
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	max-width: 600px;
+}
+.test {
+	background-color: #e5e5e55e;
+	padding: 40px;
+	backdrop-filter: blur(5px);
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+}
+
+.question-number {
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.question {
+	font-size: 24px;
+	font-weight: 400;
+}
+.answers {
+	display: flex;
+	flex-direction: column;
+	row-gap: 5px;
+}
+
+.answer {
+	background-color: #ffffff;
+	padding: 5px 10px;
+	font-size: 18px;
+	text-align: center;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.answer:hover {
+	background-color: #d5d5d5;
+}
+
+.answer:active {
+	background-color: #47bd47;
+}
+
+.asnwer_1 {
+}
+.checked {
+}
+
+.btn {
+	padding: 10px 20px;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 400;
+	border: none;
+	transition: 0.3s;
+	border-radius: 5px;
+}
+
+.btn:hover{
+	background-color: #a0a0a0;
+	color: #fff;
+}
+
+.result {
+>>>>>>> dev
 }

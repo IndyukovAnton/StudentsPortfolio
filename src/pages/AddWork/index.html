@@ -7,10 +7,12 @@
 	<link rel="stylesheet" href="../../styles/main.css">
 	<link rel="stylesheet" href="../../styles/formAddWork.css">
 	<link rel="stylesheet" href="../../styles/notifications.css">
+	<link rel="stylesheet" href="../../styles/notifications.css">
 </head>
 <body>
 	<div class="preposition__container container">
 		<a href="/StudentsPortfolio/" class="back">Вернуться</a>
+		<a href="/" class="back">Вернуться</a>
 		<input style='display: none;' class="token" value='7413990657:AAGfq7gCJ3Ab3KuMvXgSXoJdahGzY2nVKXk'>
 		<form action="#" class="add-work" enctype='multipart/form-data' method='post'>
 			<input required type="text" name='author' placeholder='Автор' class='input__author input_field'/>
@@ -69,6 +71,18 @@
 				</div>
 				<input type="file" class='input__file'/>
 				<input type="url" name='project' class='input__link' placeholder='Ссылка GitHub страницу проекта'/>
+				<div class="file_add_method">
+					<div class='file__method__wrapper'>
+						<input class='file_method' name='project_method' type="radio" value="link" checked>
+						<span>Ссылка</span>
+					</div>
+					<div class='file__method__wrapper'>
+						<input class='file_method' name='project_method' type="radio" value="file">
+						<span>Файл</span>
+					</div>
+				</div>
+				<input type="file" class='input__file'/>
+				<input type="url" name='project' class='input__link' placeholder='Ссылка GitHub страницу проекта'/>
 				<div class="file__info">
 
 				</div>
@@ -78,7 +92,9 @@
 		</form>
 	</div>
 	<div class="notification"></div>
+	<div class="notification"></div>
 
+	<script src='../../scripts/formAddWork.js' type='module'></script>
 	<script src='../../scripts/formAddWork.js' type='module'></script>
 </body>
 </html>

@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #87CEEB;
+}
+.container {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background-color: #87CEEB;
+}
+.sun {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+.cloud {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    border-radius: 25px;
+}
+.cloud::before, .cloud::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+}
+.cloud::before {
+    top: -25px;
+    left: 10px;
+}
+.cloud::after {
+    top: -25px;
+    right: 10px;
+}
+.grass {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background-color: #32CD32;
+}
+.road {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 200px;
+    background-color: #333;
+}
+.road::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 200px;
+    background: repeating-linear-gradient(white 0%, white 20%, transparent 20%, transparent 40%);
+    background-size: 100% 40px;
+}
+.tree {
+    position: absolute;
+    bottom: 200px;
+    width: 40px;
+    height: 100px;
+    background-color: gray;
+}
+.tree .leaves {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    background-color: green;
+    border-radius: 50%;
+}
+.tree1 { left: 150px; }
+.tree2 { left: 250px; }
+.tree3 { left: 350px; }
+.tree4 { left: 450px; }
+.tree5 { left: 550px; }
