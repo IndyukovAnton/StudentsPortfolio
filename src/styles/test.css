@@ -1,37 +1,74 @@
-.tests__wrapper {
-	display: grid;
-	gap: 20px;
-	grid-template-columns: repeat(3, 1fr);
-	width: 100%;
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-.test__card__wrapper {
-	background-color: #ffffff;
-	padding: 20px;
+
+.container {
+	max-width: 600px;
+}
+.test {
+	background-color: #e5e5e55e;
+	padding: 40px;
+	backdrop-filter: blur(5px);
+	border-radius: 20px;
 	display: flex;
 	flex-direction: column;
-	row-gap: 15px;
+	row-gap: 20px;
 }
-.test__card__title {
-	font-size: 22px;
+
+.question-number {
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
 }
-.test__card__language {
+
+.question {
 	font-size: 24px;
-	color: #43d14f;
+	font-weight: 400;
 }
-.test__card__description {
-	font-size: 18px;
-}
-.test__card__info {
+.answers {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	row-gap: 5px;
+}
+
+.answer {
+	background-color: #ffffff;
+	padding: 5px 10px;
 	font-size: 18px;
+	text-align: center;
+	cursor: pointer;
+	transition: 0.3s;
 }
-.test__card__author {
+
+.answer:hover {
+	background-color: #d5d5d5;
 }
-.test__card__duration {
+
+.answer:active {
+	background-color: #47bd47;
 }
-.test__card__score {
+
+.asnwer_1 {
 }
-.test__card__mode {
+.checked {
+}
+
+.btn {
+	padding: 10px 20px;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 400;
+	border: none;
+	transition: 0.3s;
+	border-radius: 5px;
+}
+
+.btn:hover{
+	background-color: #a0a0a0;
+	color: #fff;
+}
+
+.result {
 }

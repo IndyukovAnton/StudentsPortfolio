@@ -12,6 +12,12 @@ export const Lessons = {
 			photoURL: './src/images/projects/interesting/IlyaChertov/photoSlider.png',
 			comment: '"Без комментария"',
 		},
+		{
+			author: 'Тайлер Дерден ⭐',
+			link: './src/pages/interesting/TaylerDerden/clicker2/index.html',
+			photoURL: './src/images/projects/interesting/TaylerDerden/clicker2.png',
+			comment: '"Без комментария"',
+		},
 	],
 	1: [
 		{
@@ -40,6 +46,12 @@ export const Lessons = {
 			photoURL: './src/images/projects/lesson__2/IlyaChertov.png',
 			comment: '"Без комментария"',
 		},
+		{
+			author: 'Михаил Байони',
+			link: './src/pages/MikhailBayoni/lesson__2/index.html',
+			photoURL: './src/images/projects/lesson__2/MikhailBayoni.png',
+			comment: '"Без комментария"',
+		},
 	],
 	3: [
 		{
@@ -52,6 +64,12 @@ export const Lessons = {
 			author: 'Илья Чертов',
 			link: './src/pages/IlyaChertov/lesson__3/index.html',
 			photoURL: './src/images/projects/lesson__3/IlyaChertov.png',
+			comment: '"Без комментария"',
+		},
+		{
+			author: 'Михаил Байони',
+			link: './src/pages/MikhailBayoni/lesson__3/index.html',
+			photoURL: './src/images/projects/lesson__3/MikhailBayoni.png',
 			comment: '"Без комментария"',
 		},
 	],
@@ -68,6 +86,18 @@ export const Lessons = {
 			photoURL: './src/images/projects/lesson__4/IlyaChertov.png',
 			comment: '"Без комментария"',
 		},
+		{
+			author: 'Михаил Байони',
+			link: './src/pages/MikhailBayoni/lesson__4/todo/index.html',
+			photoURL: './src/images/projects/lesson__4/MikhailBayoni.todo.png',
+			comment: '"Без комментария"',
+		},
+		{
+			author: 'Михаил Байони',
+			link: './src/pages/MikhailBayoni/lesson__4/aboutme/index.html',
+			photoURL: './src/images/projects/lesson__4/MikhailBayoni.aboutme.png',
+			comment: '"Без комментария"',
+		},
 	],
 	5: [
 		{
@@ -80,6 +110,12 @@ export const Lessons = {
 			author: 'Илья Чертов',
 			link: './src/pages/IlyaChertov/lesson__5/index.html',
 			photoURL: './src/images/projects/lesson__5/IlyaChertov.png',
+			comment: '"Без комментария"',
+		},
+		{
+			author: 'Михаил Байони',
+			link: './src/pages/MikhailBayoni/lesson__5/index.html',
+			photoURL: './src/images/projects/lesson__5/MikhailBayoni.png',
 			comment: '"Без комментария"',
 		},
 	],
@@ -102,6 +138,12 @@ export const Lessons = {
 			photoURL: './src/images/projects/lesson__6/Ruslan.jpg',
 			comment: '"Сайт компании по производству мороженого"',
 		},
+		{
+			author: 'Михаил Байони',
+			link: './src/pages/MikhailBayoni/lesson__6/index.html',
+			photoURL: './src/images/projects/lesson__6/MikhailBayoni.png',
+			comment: '"Без комментария"',
+		},
 	],
 	7: [
 		{
@@ -114,6 +156,12 @@ export const Lessons = {
 			author: 'Илья Чертов',
 			link: './src/pages/IlyaChertov/lesson__7/index.html',
 			photoURL: './src/images/projects/lesson__7/IlyaChertov.png',
+			comment: '"Без комментария"',
+		},
+		{
+			author: 'Михаил Байони',
+			link: './src/pages/MikhailBayoni/lesson__7/index.html',
+			photoURL: './src/images/projects/lesson__7/MikhailBayoni.png',
 			comment: '"Без комментария"',
 		},
 	],
@@ -130,6 +178,12 @@ export const Lessons = {
 			photoURL: './src/images/projects/lesson__8/IlyaChertov.png',
 			comment: '"Без комментария"',
 		},
+		{
+			author: 'Михаил Байони',
+			link: './src/pages/MikhailBayoni/lesson__8/index.html',
+			photoURL: './src/images/projects/lesson__8/MikhailBayoni.png',
+			comment: '"Без комментария"',
+		},
 	],
 	9: [
 		{
@@ -138,9 +192,20 @@ export const Lessons = {
 			photoURL: './src/images/projects/lesson__9/TaylerDerden.png',
 			comment: '"Без комментария"',
 		},
+		{
+			author: 'Михаил Байони',
+			link: './src/pages/MikhailBayoni/lesson__9/index.html',
+			photoURL: './src/images/projects/lesson__9/MikhailBayoni.png',
+			comment: '"Без комментария"',
+		},
 	],
 	10: [
-
+		{
+			author: 'Михаил Байони',
+			link: './src/pages/MikhailBayoni/lesson__10/index.html',
+			photoURL: './src/images/projects/lesson__10/MikhailBayoni.png',
+			comment: '"Без комментария"',
+		},
 	],
 	11: [
 		{
@@ -163,6 +228,12 @@ export const Lessons = {
 			photoURL: './src/images/projects/lesson__12/IlyaChertov.png',
 			comment: '"Без комментария"',
 		},
+		{
+			author: 'Михаил Байони',
+			link: './src/pages/MikhailBayoni/lesson__12/index.html',
+			photoURL: './src/images/projects/lesson__12/MikhailBayoni.png',
+			comment: '"Без комментария"',
+		},
 	],
 	13: [
 		{
@@ -183,9 +254,20 @@ export const Lessons = {
 			photoURL: './src/images/projects/lesson__13/IlyaChertov.png',
 			comment: '"Без комментария"',
 		},
+		{
+			author: 'Михаил Байони',
+			link: './src/pages/MikhailBayoni/lesson__13/index.html',
+			photoURL: './src/images/projects/lesson__13/MikhailBayoni.png',
+			comment: '"Без комментария"',
+		},
 	],
 	14: [
-
+		{
+			author: 'Михаил Байони',
+			link: './src/pages/MikhailBayoni/lesson__14/index.html',
+			photoURL: './src/images/projects/lesson__14/MikhailBayoni.png',
+			comment: '"Без комментария"',
+		},
 	],
 	15: [
 		{
@@ -200,6 +282,12 @@ export const Lessons = {
 			photoURL: './src/images/projects/lesson__15/IlyaChertov.png',
 			comment: '"Без комментария"',
 		},
+		{
+			author: 'Михаил Байони',
+			link: './src/pages/MikhailBayoni/lesson__15/index.html',
+			photoURL: './src/images/projects/lesson__15/MikhailBayoni.png',
+			comment: '"Без комментария"',
+		},
 	],
 	16: [
 		{
@@ -212,6 +300,12 @@ export const Lessons = {
 			author: 'Илья Чертов',
 			link: './src/pages/IlyaChertov/lesson__16/index.html',
 			photoURL: './src/images/projects/lesson__16/IlyaChertov.png',
+			comment: '"Без комментария"',
+		},
+		{
+			author: 'Михаил Байони',
+			link: './src/pages/MikhailBayoni/lesson__16/index.html',
+			photoURL: './src/images/projects/lesson__16/MikhailBayoni.png',
 			comment: '"Без комментария"',
 		},
 	],
@@ -234,6 +328,12 @@ export const Lessons = {
 			author: 'Илья Чертов',
 			link: './src/pages/IlyaChertov/lesson__18/index.html',
 			photoURL: './src/images/projects/lesson__18/IlyaChertov.png',
+			comment: '"Без комментария"',
+		},
+		{
+			author: 'Михаил Байони 🔄',
+			link: './src/pages/MikhailBayoni/lesson__18/index.html',
+			photoURL: './src/images/projects/lesson__18/MikhailBayoni.png',
 			comment: '"Без комментария"',
 		},
 	],
@@ -311,6 +411,12 @@ export const Lessons = {
 			photoURL: './src/images/projects/lesson__28/IlyaChertov.png',
 			comment: '"Без комментария"',
 		},
+		{
+			author: 'Тайлер Дерден 🔄',
+			link: './src/pages/TaylerDerden/lesson__28/slider/index.html',
+			photoURL: './src/images/projects/lesson__28/TaylerDerden.png',
+			comment: '"Без комментария"',
+		},
 	],
 	29: [
 		{
@@ -331,6 +437,12 @@ export const Lessons = {
 	31: [],
 	32: [
 		{
+			author: 'Тайлер Дерден 🔄',
+			link: './src/pages/TaylerDerden/lesson__32/index.html',
+			photoURL: './src/images/projects/lesson__32/TaylerDerden.png',
+			comment: '"Ракета следует за курсором"',
+		},
+		{
 			author: 'Zaka',
 			link: './src/pages/Zaka/lesson__32/pages/index.html',
 			photoURL: './src/images/projects/lesson__32/Zaka.png',
@@ -341,6 +453,6 @@ export const Lessons = {
 			link: './src/pages/IlyaChertov/lesson__32/index.html',
 			photoURL: './src/images/projects/lesson__32/IlyaChertov.png',
 			comment: '"Без комментария"',
-		},
+		}
 	],
 };
