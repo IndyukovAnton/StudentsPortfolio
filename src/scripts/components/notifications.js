@@ -10,8 +10,8 @@ export class Notification {
 
 	show() {
 		this.container.innerHTML = `
-			<h3>${this.title}</h3>
-			<p>${this.description}</p>
+			<p class="notification__title">${this.title}</p>
+			<p class="notification__description">${this.description}</p>
 		`
 		this.container.classList.add(this.type)
 		this.container.classList.add("show")

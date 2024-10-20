@@ -1,13 +1,37 @@
 import {Lessons} from '../data/lessons.js';
-import {search} from './search.js';
+import {search} from './components/search.js';
 
 const postsContainer = document.querySelector('.main__content');
 const mainTitle = document.querySelector('.main__title');
 
-function createPost(author, comment, photoURL, link) {
+const tags_symbols = {
+	"interesting": "⭐",
+	"modified": "🔄"
+}
+
+function createPost(author, comment, photoURL, link, tags) {
 
 	if (!photoURL) {
 		photoURL = './src/images/dummy.png';
+	}
+
+	if (!comment) {
+		comment = '"Без комментария"'
+	}
+
+	
+
+	if (!tags || !tags.length) {
+		tags = ''
+	} else {
+
+		const _tags = []
+
+		for (let tag of tags) {
+			_tags.push(`<li class='post__tags-item' title='${tag}'>${tags_symbols[tag]}</li>`)
+		}
+
+		tags = _tags.join('')
 	}
 
 	const postHTML = `
@@ -15,6 +39,7 @@ function createPost(author, comment, photoURL, link) {
 		<a href="${link}" target="_blank" class="post__link"><img src="${photoURL}" alt="post__photo" class="post__photo"></a>
 		<div class="post__info">
 		<h3 class="post__author">${author}</h3>
+		<ul class="post__tags">${tags}</ul>
 		<p class="post__comment">${comment}</p>
 		</div>
 		</div>
@@ -28,8 +53,18 @@ const lessonsContainer = document.querySelector('.lessons');
 function loadPosts(posts) {
 	postsContainer.innerHTML = '';
 	posts.forEach((post) => {
-		createPost(post.author, post.comment, post.photoURL, post.link);
+		createPost(post.author, post.comment, post.photoURL, post.link, post.tags);
 	});
+}
+
+function loadAllPosts(posts) {
+	postsContainer.innerHTML = '';
+
+	for (let post_id of Object.keys(posts)) {
+		posts[post_id].forEach((post) => {
+			createPost(post.author, post.comment, post.photoURL, post.link, post.tags);
+		});
+	}
 }
 
 lessonsContainer.addEventListener('click', (e) => {
@@ -58,9 +93,13 @@ lessonsContainer.addEventListener('click', (e) => {
 	}
 });
 
-
 const searchField = document.querySelector('.search');
 
 searchField.addEventListener('input', (e)=> {
 	loadPosts(search(Lessons, e.currentTarget.value))
+})
+
+
+document.addEventListener('DOMContentLoaded', (e)=> {
+	loadAllPosts(Lessons)
 })

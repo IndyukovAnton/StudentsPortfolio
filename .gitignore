@@ -1,3 +1,5 @@
 src/pages/Tests
 src/data/tests
 README.md
+/build
+gulpfile.js
