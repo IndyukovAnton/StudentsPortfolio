@@ -3,7 +3,11 @@ export const search = (works, query) => {
 
 	for (let i = 0; i <= 32; i++) {
 		works[i].forEach(work => {
-			if (work.author.toLowerCase().includes(query.toLowerCase()) || work.comment.toLowerCase().includes(query.toLowerCase())) {
+
+			const author = work.author || ''
+			const comment = work.comment || ''
+
+			if (author.toLowerCase().includes(query.toLowerCase()) || comment.toLowerCase().includes(query.toLowerCase())) {
 				searched.push(work)
 			}
 		})
