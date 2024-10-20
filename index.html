@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Student portfolio</title>
 	<link rel="stylesheet" href="./src/styles/main.css">
-	<link rel="stylesheet" href="./src/styles/formAddWork.css">
+	<link rel="stylesheet" href="./src/styles/components/forms/add-work.css">
 	<link rel="icon" href="./src/images/icons/icon.svg">
 </head>
 <body>
@@ -22,6 +22,8 @@
 			<li type='none' class="lessons__item"><a class='lessons__item__link' href="/add-work">Предложить работу</a></li>
 			<li type='none' class="lessons__item"><a class='lessons__item__link' href="/tests">Тесты</a></li>
 			<li type='none' class="lessons__item"><a class='lessons__item__link' href="/0">Интересные</a></li>
+
+			<li class='lessons__part-title'>HTML</li>
 			<li value='1' class="lessons__item"><a class='lessons__item__link' href="/1">Введение в Web. Знакомство с HTML</a></li>
 			<li class="lessons__item"><a class='lessons__item__link' href="/2">Теги стилизации текста</a></li>
 			<li class="lessons__item"><a class='lessons__item__link' href="/3">Фотографии и ссылки. Блочные и строчные теги</a></li>
@@ -32,6 +34,8 @@
 			<li class="lessons__item"><a class='lessons__item__link' href="/8">Формы</a></li>
 			<li class="lessons__item"><a class='lessons__item__link' href="/9">Семантическая вёрстка</a></li>
 			<li class="lessons__item"><a class='lessons__item__link' href="/10">Метаданные и элементы тега head</a></li>
+
+			<li class='lessons__part-title'>CSS</li>
 			<li class="lessons__item"><a class='lessons__item__link' href="/11">Знакомство с CSS</a></li>
 			<li class="lessons__item"><a class='lessons__item__link' href="/12">Стилизация текста</a></li>
 			<li class="lessons__item"><a class='lessons__item__link' href="/13">Отступы. Рамки и тень. @import</a></li>
@@ -42,6 +46,8 @@
 			<li class="lessons__item"><a class='lessons__item__link' href="/18">Flex</a></li>
 			<li class="lessons__item"><a class='lessons__item__link' href="/19">Grid</a></li>
 			<li class="lessons__item"><a class='lessons__item__link' href="/20">Адаптивность</a></li>
+
+			<li class='lessons__part-title'>JavaScript</li>
 			<li class="lessons__item"><a class='lessons__item__link' href="/21">Знакомство с JavaScript</a></li>
 			<li class="lessons__item"><a class='lessons__item__link' href="/22">Работа с консолью, модальные окна</a></li>
 			<li class="lessons__item"><a class='lessons__item__link' href="/23">Условные конструкции. Тернарный оператор. Switch.</a></li>
@@ -59,14 +65,15 @@
 	<main class="main">
 		<section class="main__container container">
 			<h1 class="main__title">Работы учеников</h1>
-			<div class="main__content">
-				<p class="main__info">
+			<div class="main__info">
+				<p class="main__text">
 					Здесь вы можете посмотреть работы учеников по нужной теме и подчеркнуть детали для своих.
 				</p>
-				<p class="main__info">
+				<p class="main__text">
 					Для поиска конкретной работы, просто напишите имя автора в поле поиска или название работы.
 				</p>
 			</div>
+			<div class="main__content"></div>
 		</section>
 	</main>
 	<footer class="footer">
@@ -79,7 +86,7 @@
 	</footer>
 
 	<script src='./src/scripts/main.js' type='module'></script>
-	<script src='./src/scripts/open__lessons.js'></script>
-	<script src='./src/scripts/formAddWork.js'></script>
+	<script src='./src/scripts/components/lessons-link.js'></script>
+	<script src='./src/scripts/components/add-work.js'></script>
 </body>
 </html>
