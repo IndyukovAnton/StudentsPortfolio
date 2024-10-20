@@ -2,6 +2,10 @@ body {
 	margin-top: 60px;
 }
 
+body.hidden .tests__wrapper {
+	display: none;
+}
+
 .tests__wrapper {
 	display: grid;
 	gap: 20px;
@@ -53,7 +57,12 @@ body {
 
 
 .test__card__title {
+	font-family: 'Roboto', sans-serif;
 	font-size: 22px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 900;
 }
 
 .test__card__description {

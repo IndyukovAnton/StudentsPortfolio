@@ -33,6 +33,10 @@
 	padding: 20px;
 }
 
+.input__photo {
+	padding: 20px 0;
+}
+
 .input__file {
 	display: none;
 	flex-direction: column;
@@ -46,8 +50,19 @@
 }
 
 .photo__preview {
+	display: none;
 	max-width: 400px;
 	max-height: 400px;
+	object-fit: cover;
+}
+
+.photo__preview.visible {
+	display: block;
+}
+
+.input__link {
+	padding: 5px;
+	font-size: 18px;
 }
 
 .button__send {

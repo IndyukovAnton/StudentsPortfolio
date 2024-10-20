@@ -7,6 +7,7 @@ function showPhotoPreview(file) {
 	reader.readAsDataURL(file)
 	reader.onload = () => {
 		project_photo_preview.src = reader.result
+		project_photo_preview.classList.add('visible')
 
 		const title = project_photo_wrapper.querySelector('label')
 		title.textContent = "Фото добавлено!"

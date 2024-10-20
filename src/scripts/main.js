@@ -1,5 +1,5 @@
 import {Lessons} from '../data/lessons.js';
-import {search} from './search.js';
+import {search} from './components/search.js';
 
 const postsContainer = document.querySelector('.main__content');
 const mainTitle = document.querySelector('.main__title');
@@ -8,6 +8,10 @@ function createPost(author, comment, photoURL, link) {
 
 	if (!photoURL) {
 		photoURL = './src/images/dummy.png';
+	}
+
+	if (!comment) {
+		comment = '"Без комментария"'
 	}
 
 	const postHTML = `
@@ -58,9 +62,13 @@ lessonsContainer.addEventListener('click', (e) => {
 	}
 });
 
-
 const searchField = document.querySelector('.search');
 
 searchField.addEventListener('input', (e)=> {
 	loadPosts(search(Lessons, e.currentTarget.value))
+})
+
+
+document.addEventListener('DOMContentLoaded', (e)=> {
+	loadPosts(search(Lessons, ''))
 })

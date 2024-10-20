@@ -1,0 +1,25 @@
+.post {
+	background-color: var(--post-bg);
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 40px;
+	padding: 20px;
+	align-items: stretch;
+	border-radius: 10px;
+}
+
+.post__photo {
+	max-width: clamp(100px, 30vw, 400px);
+	transition: 0.4s;
+}
+
+.post__info {
+	height: 100%;
+}
+.post__author {
+	font-size: clamp(20px, 6vw, var(--title-font-size));
+	margin-bottom: 20px;
+}
+.post__comment {
+	font-size: clamp(14px, 4vw, var(--text-size));
+}
