@@ -1,21 +1,21 @@
 export const Lessons = {
 	0: [
 		{
-			author: 'Илья Чертов ⭐',
+			author: 'Илья Чертов',
 			link: './src/pages/projects/Interesting/IlyaChertov/moneyClicker/index.html',
 			photoURL: './src/images/projects/Interesting/IlyaChertov/moneyClicker.png',
 			comment: null,
 			tags: ["interesting"]
 		},
 		{
-			author: 'Илья Чертов ⭐',
+			author: 'Илья Чертов',
 			link: './src/pages/projects/Interesting/IlyaChertov/photoSlider/index.html',
 			photoURL: './src/images/projects/Interesting/IlyaChertov/photoSlider.png',
 			comment: null,
 			tags: ["interesting"]
 		},
 		{
-			author: 'Тайлер Дерден ⭐',
+			author: 'Тайлер Дерден',
 			link: './src/pages/projects/Interesting/TaylerDerden/clicker2/index.html',
 			photoURL: './src/images/projects/Interesting/TaylerDerden/clicker2.png',
 			comment: null,
@@ -379,7 +379,7 @@ export const Lessons = {
 			tags: []
 		},
 		{
-			author: 'Михаил Байони 🔄',
+			author: 'Михаил Байони',
 			link: './src/pages/projects/MikhailBayoni/lesson__18/index.html',
 			photoURL: './src/images/projects/lesson__18/MikhailBayoni.png',
 			comment: null,
@@ -468,7 +468,7 @@ export const Lessons = {
 			tags: []
 		},
 		{
-			author: 'Тайлер Дерден 🔄',
+			author: 'Тайлер Дерден',
 			link: './src/pages/projects/TaylerDerden/lesson__28/slider/index.html',
 			photoURL: './src/images/projects/lesson__28/TaylerDerden.png',
 			comment: null,
@@ -496,7 +496,7 @@ export const Lessons = {
 	31: [],
 	32: [
 		{
-			author: 'Тайлер Дерден 🔄',
+			author: 'Тайлер Дерден',
 			link: './src/pages/projects/TaylerDerden/lesson__32/index.html',
 			photoURL: './src/images/projects/lesson__32/TaylerDerden.png',
 			comment: '"Ракета следует за курсором"',

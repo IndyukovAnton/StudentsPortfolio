@@ -49,7 +49,7 @@ const project_photo_preview = document.querySelector('.photo__preview');
 const project_file_info = document.querySelector('.file__info');
 const button_add_project_photo = document.querySelector('.input__photo ')
 
-button_add_project_photo.addEventListener('change', (e)=> {
+button_add_project_photo?.addEventListener('change', (e)=> {
 	showPhotoPreview(e.target.files[0])
 })
 
