@@ -1,8 +1,8 @@
 export const search = (works, query) => {
 	let searched = []
 
-	for (let i = 0; i <= 32; i++) {
-		works[i].forEach(work => {
+	for (let work_id of Object.keys(works)) {
+		works[work_id].forEach(work => {
 
 			const author = work.author || ''
 			const comment = work.comment || ''
