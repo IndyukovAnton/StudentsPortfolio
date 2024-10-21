@@ -3,28 +3,28 @@ export const Lessons = {
 		{
 			author: 'Илья Чертов',
 			link: './src/pages/projects/Interesting/IlyaChertov/moneyClicker/index.html',
-			photoURL: './src/images/projects/Interesting/IlyaChertov/moneyClicker.png',
+			photoURL: './src/images/projects/interesting/IlyaChertov/moneyClicker.png',
 			comment: null,
 			tags: ["interesting"]
 		},
 		{
 			author: 'Илья Чертов',
 			link: './src/pages/projects/Interesting/IlyaChertov/photoSlider/index.html',
-			photoURL: './src/images/projects/Interesting/IlyaChertov/photoSlider.png',
+			photoURL: './src/images/projects/interesting/IlyaChertov/photoSlider.png',
 			comment: null,
 			tags: ["interesting"]
 		},
 		{
 			author: 'Тайлер Дерден',
 			link: './src/pages/projects/Interesting/TaylerDerden/clicker2/index.html',
-			photoURL: './src/images/projects/Interesting/TaylerDerden/clicker2.png',
+			photoURL: './src/images/projects/interesting/TaylerDerden/clicker2.png',
 			comment: null,
 			tags: ["interesting"]
 		},
 		{
 			author: 'Руслан',
 			link: 'https://verni5297.github.io/goida_music/index.html',
-			photoURL: './src/images/projects/Interesting/Ruslan/goida-music.png',
+			photoURL: './src/images/projects/interesting/Ruslan/goida-music.png',
 			comment: 'Площадка для прослушиванию музыки "GoidaMusic"',
 			tags: ["interesting"]
 		}
