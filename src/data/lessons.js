@@ -21,6 +21,13 @@ export const Lessons = {
 			comment: null,
 			tags: ["interesting"]
 		},
+		{
+			author: 'Руслан',
+			link: 'https://verni5297.github.io/goida_music/index.html',
+			photoURL: './src/images/projects/Interesting/Ruslan/goida-music.png',
+			comment: 'Площадка для прослушиванию музыки "GoidaMusic"',
+			tags: ["interesting"]
+		}
 	],
 	1: [
 		{
