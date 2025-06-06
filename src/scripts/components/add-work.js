@@ -119,7 +119,6 @@ function formateProjectCaption(projectData) {
 
 async function sendProject(projectData) {
 	const url = `https://api.telegram.org/bot${getToken()}`
-
 	const caption = formateProjectCaption(projectData)
 
 	projectData.append('caption', caption)
