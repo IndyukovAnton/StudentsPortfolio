@@ -38,7 +38,7 @@ async function request(url, data) {
 
 
 function getToken() {
-	const _token = document.querySelector('.token').value
+	const _token = document.querySelector('.nekot').value
 	return _token
 }
 
@@ -63,18 +63,25 @@ file_methods.forEach(file_method => {
 	file_method.addEventListener('change', switchMethodAddProject)
 })
 
+function setParameters(item, display = null, name = null, required = false) {
+
+	if (!display) {
+		display = 'none'
+	}
+
+	item.style.display = display
+	item.name = name
+	item.required = required
+}
+
 function switchMethodAddProject(e) {
 	if (e.target.value == 'link') {
-		project_link.style.display = 'block'
-		project_link.name = 'project'
-		project_file.style.display = 'none'
-		project_file.name = ''
+		setParameters(project_link, 'block', 'project', true)
+		setParameters(project_file, null, '', false)
 		project_file_info.style.display = 'none'
 	} else {
-		project_link.style.display = 'none'
-		project_link.name = ''
-		project_file.style.display = 'flex'
-		project_file.name = 'project'
+		setParameters(project_link, null, '', false)
+		setParameters(project_file, 'flex', 'project', true)
 		project_file_info.style.display = 'block'
 	}
 }

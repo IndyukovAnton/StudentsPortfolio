@@ -6,11 +6,21 @@
 @import url('./pages/front-page/post.css');
 @import url('./default/header.css');
 @import url('./default/footer.css');
+@import url('./components/tooltip.css');
 @import url('./components/navigation.css');
+@import url('./components/custom-input.css');
 @import url('./animations.css');
 
-body {
+body:has(.preposition__container),
+html:has(.preposition__container) {
+	min-height: 100%;
+}
+
+body:not(:has(.preposition__container)) {
 	height: 100dvh;
+}
+
+body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;

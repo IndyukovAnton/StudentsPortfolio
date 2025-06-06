@@ -1,11 +1,13 @@
 .notification {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	position: fixed;
 	top: 20px;
 	right: 50%;
 	transform: translateX(50%);
-	width: 300px;
+	max-width: 350px;
+	width: 100%;
 	background-color: #fff;
-	padding: 10px;
+	padding: 15px 20px;
 	border-radius: 5px;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 	transition: 0.3s;
@@ -13,18 +15,31 @@
 	z-index: 1;
 }
 
+.notification__title {
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.notification__description {
+	font-size: 18px;
+	font-weight: 300;
+	text-align: center;
+}
+
 .notification.show {
 	opacity: 1;
 }
 
 .notification.success {
-	background-color: #0ae636;
+	background-color: var(--color-notification-success);
 }
 
 .notification.warning {
-	background-color: #ece121;
+	background-color: var(--color-notification-warning);
 }
 
 .notification.error {
-	background-color: #db3131;
+	background-color: var(--color-notification-error);
 }

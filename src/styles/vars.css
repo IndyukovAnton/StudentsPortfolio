@@ -7,4 +7,10 @@
 	--text-color: rgb(0, 0, 0);
 	--lessons-item-color: rgb(255, 255, 255);
 	--text-size: 24px;
+
+	/* Notifications colors */
+
+	--color-notification-success: #42fa67;
+	--color-notification-warning: #fff425;
+	--color-notification-error: #db3131;
 }
