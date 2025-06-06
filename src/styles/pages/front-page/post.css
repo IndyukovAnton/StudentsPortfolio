@@ -8,23 +8,22 @@
 	border-radius: 10px;
 }
 
-.post__photo {
-	max-width: clamp(100px, 30vw, 400px);
-	transition: 0.4s;
-}
-
 .post__info {
 	height: 100%;
 }
 .post__author {
+	display: flex;
+	align-items: center;
 	font-size: clamp(20px, 6vw, var(--title-font-size));
 	text-wrap: nowrap;
+	margin-bottom: 10px;
 }
 
 .post__tags {
 	display: flex;
 	column-gap: 10px;
 	list-style: none;
+	margin-left: 5px;
 }
 
 .post__tags-item {
@@ -35,8 +34,16 @@
 	font-size: clamp(14px, 4vw, var(--text-size));
 }
 
+.post__photo {
+	max-width: clamp(100px, 30vw, 400px);
+	width: 100%;
+	transition: 0.3s;
+	border-radius: 5px;
+}
+
 @media screen and (hover: hover) {
 	.post__photo:hover {
+		pointer-events: visible;
 		transform: scale(1.3);
 	}
 }

@@ -5,18 +5,39 @@ const postsContainer = document.querySelector('.main__content');
 const mainTitle = document.querySelector('.main__title');
 
 const tags_symbols = {
-	"interesting": "⭐",
-	"modified": "🔄"
+	"interesting": {
+		"icon": "⭐",
+		"description": "Личный проект ученика"
+	},
+	"modified": {
+		"icon": "🔄",
+		"description": "Личный проект ученика, который был частично доработан"
+	},
 }
 
-function createPost(author, comment, photoURL, link, tags) {
+function createTag(tag = null) {
+	if (tag === null) {
+		return ""
+	}
+
+	const tagElement = `
+	<li class="post__tags-item tooltip" title="${tag}" tooltip>
+		<span class="post__tags-item-icon">${tags_symbols[tag]['icon']}</span>
+		<div class="tooltip-text" tooltip-text>${tags_symbols[tag]['description']}</div>
+	</li>
+	`
+
+	return tagElement
+}
+
+function createPost(author, comment = null, photoURL, link, tags) {
 
 	if (!photoURL) {
 		photoURL = './src/images/dummy.png';
 	}
 
 	if (!comment) {
-		comment = '"Без комментария"'
+		comment = '«Без комментария»'
 	}
 
 	
@@ -28,7 +49,7 @@ function createPost(author, comment, photoURL, link, tags) {
 		const _tags = []
 
 		for (let tag of tags) {
-			_tags.push(`<li class='post__tags-item' title='${tag}'>${tags_symbols[tag]}</li>`)
+			_tags.push(createTag(tag))
 		}
 
 		tags = _tags.join('')
@@ -38,8 +59,11 @@ function createPost(author, comment, photoURL, link, tags) {
 	<div class="post">
 		<a href="${link}" target="_blank" class="post__link"><img src="${photoURL}" alt="post__photo" class="post__photo"></a>
 		<div class="post__info">
-		<h3 class="post__author">${author}</h3>
-		<ul class="post__tags">${tags}</ul>
+		<h3 class="post__author">
+			<a href="${link}" target="_blank" class="post__link">${author}</a>
+			<ul class="post__tags">${tags}</ul>
+		</h3>
+		
 		<p class="post__comment">${comment}</p>
 		</div>
 		</div>

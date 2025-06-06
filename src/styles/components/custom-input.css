@@ -1,0 +1,30 @@
+.custom__input-file-field {
+	position: relative;
+}
+
+.custom__input-file-field label {
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding: 20px;
+	border: 4px dotted #bfbfbf;
+	transition: 0.2s 0s ease;
+}
+
+.custom__input-file-field input[type="file"] {
+	appearance: none;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+@media (hover: hover) {
+	.custom__input-file-field:hover label {
+		border-style: solid;
+		border-color: #343434;
+	}
+}

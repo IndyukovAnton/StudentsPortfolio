@@ -1,0 +1,27 @@
+.tooltip {
+	position: relative;
+	cursor: help;
+}
+
+.tooltip-text {
+	opacity: 0;
+	position: absolute;
+	top: -60%;
+	transform: translateY(60%);
+	left: 40%;
+	transition: 0.2s 0s ease-in;
+	font-size: 16px;
+	font-weight: 300;
+	pointer-events: none;
+	user-select: none;
+	background-color: rgba(199, 193, 246, 0.7);
+	padding: 10px;
+	border-radius: 10px;
+}
+
+@media (hover: hover) {
+	.tooltip:hover .tooltip-text {
+		display: block;
+		opacity: 1;
+	}
+}
