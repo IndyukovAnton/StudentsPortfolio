@@ -1,0 +1,19 @@
+.projects {
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 20px;
+}
+
+.projects__empty {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	color: #fff;
+	font-size: clamp(32px, 3vw, var(--title-font-size));
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: rgba(255, 255, 255, 0.4);
+	padding: 20px;
+	backdrop-filter: blur(3px);
+	border-radius: 15px;
+	letter-spacing: 5px;
+}

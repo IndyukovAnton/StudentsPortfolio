@@ -1,91 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Student portfolio</title>
-	<link rel="stylesheet" href="./src/styles/main.css">
-	<link rel="stylesheet" href="./src/styles/components/forms/add-work.css">
-	<link rel="icon" href="./src/images/icons/icon.svg">
-</head>
-<body>
-	<header class="header">
-		<div class="container">
-			<input type="search" class='search' placeholder='поиск' autocomplete="given-name">
-			<button class="open__lessons"></button>
-		</div>
-	</header>
-	
-	<aside class="lessons">
-		<h2 class="lessons__title">Темы</h2>
-		<ol class="lessons__list" start='-3'>
-			<li type='none' class="lessons__item"><a class='lessons__item__link' href="/add-work">Предложить работу</a></li>
-			<li type='none' class="lessons__item"><a class='lessons__item__link' href="/tests">Тесты</a></li>
-			<li type='none' class="lessons__item"><a class='lessons__item__link' href="/0">Интересные</a></li>
-
-			<li class='lessons__part-title'>HTML</li>
-			<li class="lessons__item"><a class='lessons__item__link' href="/1">Введение в Web. Знакомство с HTML</a></li>
-			<li class="lessons__item"><a class='lessons__item__link' href="/2">Теги стилизации текста</a></li>
-			<li class="lessons__item"><a class='lessons__item__link' href="/3">Фотографии и ссылки. Блочные и строчные теги</a></li>
-			<li class="lessons__item"><a class='lessons__item__link' href="/4">Списки. Нумерованные, Маркированный, Выпадающий, список определений</a></li>
-			<li class="lessons__item"><a class='lessons__item__link' href="/5">Работа с текстом</a></li>
-			<li class="lessons__item"><a class='lessons__item__link' href="/6">Работа с путями, многостраничный сайт, якоря</a></li>
-			<li class="lessons__item"><a class='lessons__item__link' href="/7">Вставка объектов</a></li>
-			<li class="lessons__item"><a class='lessons__item__link' href="/8">Формы</a></li>
-			<li class="lessons__item"><a class='lessons__item__link' href="/9">Семантическая вёрстка</a></li>
-			<li class="lessons__item"><a class='lessons__item__link' href="/10">Метаданные и элементы тега head</a></li>
-
-			<li class='lessons__part-title'>CSS</li>
-			<li class="lessons__item"><a class='lessons__item__link' href="/11">Знакомство с CSS</a></li>
-			<li class="lessons__item"><a class='lessons__item__link' href="/12">Стилизация текста</a></li>
-			<li class="lessons__item"><a class='lessons__item__link' href="/13">Отступы. Рамки и тень. @import</a></li>
-			<li class="lessons__item"><a class='lessons__item__link' href="/14">Стилизация списков, курсора и обнуляющие стили. Работа с фоном.</a></li>
-			<li class="lessons__item"><a class='lessons__item__link' href="/15">Псевдоэлементы и псевдоклассы</a></li>
-			<li class="lessons__item"><a class='lessons__item__link' href="/16">Позиционирование, display, overflow, z-index</a></li>
-			<li class="lessons__item"><a class='lessons__item__link' href="/17">Анимации, transition, transform, переменные CSS</a></li>
-			<li class="lessons__item"><a class='lessons__item__link' href="/18">Flex</a></li>
-			<li class="lessons__item"><a class='lessons__item__link' href="/19">Grid</a></li>
-			<li class="lessons__item"><a class='lessons__item__link' href="/20">Адаптивность</a></li>
-
-			<li class='lessons__part-title'>JavaScript</li>
-			<li class="lessons__item"><a class='lessons__item__link' href="/21">Знакомство с JavaScript</a></li>
-			<li class="lessons__item"><a class='lessons__item__link' href="/22">Работа с консолью, модальные окна</a></li>
-			<li class="lessons__item"><a class='lessons__item__link' href="/23">Условные конструкции. Тернарный оператор. Switch.</a></li>
-			<li class="lessons__item"><a class='lessons__item__link' href="/24">Массивы</a></li>
-			<li class="lessons__item"><a class='lessons__item__link' href="/25">Циклы</a></li>
-			<li class="lessons__item"><a class='lessons__item__link' href="/26">Функции</a></li>
-			<li class="lessons__item"><a class='lessons__item__link' href="/27">Отслеживание ошибок. Объекты. Строковые методы</a></li>
-			<li class="lessons__item"><a class='lessons__item__link' href="/28">DOM. data-атрибуты</a></li>
-			<li class="lessons__item"><a class='lessons__item__link' href="/29">Отслеживание событий. Модуль Math</a></li>
-			<li class="lessons__item"><a class='lessons__item__link' href="/30">import и export. Классы</a></li>
-			<li class="lessons__item"><a class='lessons__item__link' href="/31">Сетевые запросы. Fetch</a></li>
-			<li class="lessons__item"><a class='lessons__item__link' href="/32">Итоговые проекты</a></li>
-		</ol>
-	</aside>
-	<main class="main">
-		<section class="main__container container">
-			<h1 class="main__title">Работы учеников</h1>
-			<div class="main__info">
-				<p class="main__text">
-					Здесь вы можете посмотреть работы учеников по нужной теме и подчеркнуть детали для своих.
-				</p>
-				<p class="main__text">
-					Для поиска конкретной работы, просто напишите имя автора в поле поиска или название работы.
-				</p>
-			</div>
-			<div class="main__content"></div>
-		</section>
-	</main>
-	<footer class="footer">
-		<div class="container">
-			<p class="footer__info">
-				Материал распространяется в свободном доступе, но не для использования в коммерческих
-				целях.
-			</p>
-		</div>
-	</footer>
-
-	<script src='./src/scripts/main.js' type='module'></script>
-	<script src='./src/scripts/components/burger.js'></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="./src/images/icons/icon.svg">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Student portfolio</title>
+	</head>
+	<body>
+		<div id="root"></div>
+		<script type="module" src="/src/main.tsx"></script>
+	</body>
 </html>
