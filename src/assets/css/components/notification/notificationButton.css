@@ -1,0 +1,29 @@
+.notifications-button {
+	position: relative;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+	background-color: transparent;
+	border: none;
+	user-select: none;
+}
+
+.notifications-icon {
+	object-fit: cover;
+	filter: invert(1);
+}
+
+.dot-indicator {
+	display: none;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: var(--dot-indicator-color);
+}
+
+.dot-indicator.visible {
+	display: block;
+}

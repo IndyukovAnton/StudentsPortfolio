@@ -1,0 +1,27 @@
+.notification{
+	padding: 10px 20px;
+	border-bottom: 1px solid #9e9e9e;
+	cursor: pointer;
+}
+
+@media (hover: hover) {
+	.notification:hover {
+		background-color: #e6e6e6;
+	}
+}
+
+.notification:not(:last-child) {
+	
+}
+
+.notification__title{
+	font-size: 20px;
+	margin-bottom: 10px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.notification__description{
+	font-size: 18px;
+	text-align: center;
+}

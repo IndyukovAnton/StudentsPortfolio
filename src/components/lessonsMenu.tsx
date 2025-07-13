@@ -11,7 +11,7 @@ const lessons = {
 			title: "Тесты"
 		},
 		{
-			link: "0",
+			link: "interesting",
 			title: "Интересные"
 		},
 	],

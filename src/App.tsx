@@ -8,6 +8,7 @@ import Footer from "./components/footer"
 import ProjectList from "./components/project/projectList"
 import Search from "./components/search"
 import Burger from "./components/burger"
+import NotificationsWrapper from "./components/notification/notificationWrapper"
 
 import lessonsData from "./assets/data/lessons.json"
 
@@ -54,6 +55,7 @@ function App() {
 		<>
 			<Header>
 				<Search value={searchValue} onChange={filteringLessons}/>
+				<NotificationsWrapper />
 				<Burger />
 			</Header>
 
