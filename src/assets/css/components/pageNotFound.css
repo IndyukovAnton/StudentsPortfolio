@@ -1,0 +1,22 @@
+.not-found {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	color: #fff;
+}
+
+.not-found__header {
+	font-size: 70px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.not-found__description {
+	font-size: 30px;
+}
+.not-found__btn-back {
+	display: block;
+	max-width: fit-content;
+	margin: 20px auto 0;
+	padding: 10px;
+	font-size: 20px;
+}

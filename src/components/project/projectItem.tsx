@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import "../../assets/css/components/project/projectItem.css";
 
 import TagList from "../tag/tagList";
@@ -14,9 +16,9 @@ export function ProjectItem(project: Project) {
 
 	return (
 		<div className="project">
-			<a href={project.link} target="_blank" className="project__link">
-				<img src={project.photoURL} alt="project__photo" className="project__photo" />
-			</a>
+			<Link to={project.link} target="_blank" className="project__link">
+				<img src={project.photoURL || "../../src/assets/images/dummy.png"} alt="project__photo" className="project__photo" />
+			</Link>
 			<div className="project__info">
 			<h3 className="project__author">{project.author}</h3>
 

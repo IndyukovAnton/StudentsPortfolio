@@ -1,16 +1,9 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Student Portfolio - Предложить работу</title>
-	<link rel="stylesheet" href="../../styles/main.css">
-	<link rel="stylesheet" href="../../styles/components/forms/add-work.css">
-	<link rel="stylesheet" href="../../styles/components/notifications.css">
-</head>
+import '../assets/css/components/forms/add-work.css'
+
 <body>
 	<div class="preposition__container container">
 		<a href="/" class="back">Вернуться</a>
+	
 		<input style='display: none;' class="token" value='7413990657:AAGfq7gCJ3Ab3KuMvXgSXoJdahGzY2nVKXk'>
 		<form action="#" class="add-work" enctype='multipart/form-data' method='post'>
 			<input required type="text" name='author' placeholder='Автор' class='input__author input_field'/>

@@ -1,23 +1,20 @@
 import "./assets/css/App.css"
 
 import { useState } from "react"
-
-import Header from "./components/header"
-import LessonsMenu from "./components/lessonsMenu"
-import Footer from "./components/footer"
-import ProjectList from "./components/project/projectList"
-import Search from "./components/search"
-import Burger from "./components/burger"
-import NotificationsWrapper from "./components/notification/notificationWrapper"
+import { Routes, Route } from "react-router-dom"
 
 import lessonsData from "./assets/data/lessons.json"
+
+import { LayoutPage } from "./components/layoutPage"
+import { HomePage } from "./pages/pageHome"
+import { NotFoundPage } from "./pages/pageNotFound"
 
 
 function App() {
 
 	const origLessons = JSON.parse(JSON.stringify(lessonsData))
-	const [searchValue, setSearchValue] = useState('')
 	const [lessons, setLessons] = useState(origLessons)
+	const [searchValue, setSearchValue] = useState('')
 
 	function filteringLessons(event) {
 		setSearchValue(event.target.value)
@@ -53,30 +50,12 @@ function App() {
 
 	return (
 		<>
-			<Header>
-				<Search value={searchValue} onChange={filteringLessons}/>
-				<NotificationsWrapper />
-				<Burger />
-			</Header>
-
-			<LessonsMenu />
-
-			<main className="main">
-				<section className="main__container container">
-					<h1 className="main__title">Работы учеников</h1>
-					<div className="main__info">
-						<p className="main__text">
-							Здесь вы можете посмотреть работы учеников по нужной теме и подчеркнуть детали для своих.
-						</p>
-						<p className="main__text">
-							Для поиска конкретной работы, просто напишите имя автора в поле поиска или название работы.
-						</p>
-					</div>
-					<ProjectList lessons={lessons}/>
-				</section>
-			</main>
-
-			<Footer />
+			<Routes>
+				<Route path="/" element={ <LayoutPage searchValue={searchValue} actionFunc={filteringLessons}/>}>
+					<Route index element={ <HomePage lessons={lessons}/>}></Route>
+					<Route path="*" element={ <NotFoundPage />}></Route>
+				</Route>
+			</Routes>
 		</>
 	)
 }
