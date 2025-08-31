@@ -7,7 +7,7 @@ export default function ProjectList(props: {lessons: any}) {
 	const lessonsKeys = Object.keys(lessons)
 
 	if (!lessonsKeys.length) {
-		return <p className="projects__empty">Empty</p>
+		return <p className="projects__empty">Ничего не найдено!</p>
 	}
 
 	return (

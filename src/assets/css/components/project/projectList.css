@@ -7,7 +7,7 @@
 .projects__empty {
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	color: #fff;
-	font-size: clamp(32px, 3vw, var(--title-font-size));
+	font-size: clamp(20px, 5vw, 28px);
 	font-weight: 700;
 	text-align: center;
 	text-transform: uppercase;

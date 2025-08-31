@@ -8,9 +8,13 @@
 	border-radius: 10px;
 }
 
-.project__photo {
+.project__photo {]
+	display: block;
 	max-width: clamp(100px, 30vw, 400px);
 	transition: 0.4s;
+	transition: 0.4s;
+	height: 300px;
+	object-fit: fill;
 }
 
 .project__info {
@@ -19,6 +23,14 @@
 .project__author {
 	font-size: clamp(20px, 6vw, var(--title-font-size));
 	text-wrap: nowrap;
+
+	@media (hover: hover) {
+		&:hover {
+			text-decoration: underline;
+			text-decoration-skip-ink: none;
+			text-underline-offset: 10px;
+		}
+	}
 }
 
 .project__comment {
@@ -54,6 +66,7 @@
 
 	.project__author {
 		margin-bottom: 5px;
+		
 	}
 }
 

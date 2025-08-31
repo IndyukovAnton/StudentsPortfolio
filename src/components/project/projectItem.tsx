@@ -19,10 +19,15 @@ export function ProjectItem(project: Project) {
 			<Link to={project.link} target="_blank" className="project__link">
 				<img src={project.photoURL || "../../src/assets/images/dummy.png"} alt="project__photo" className="project__photo" />
 			</Link>
+
 			<div className="project__info">
-			<h3 className="project__author">{project.author}</h3>
+			
+			<Link to={project.link} target="_blank" className="project__link">
+				<h3 className="project__author">{project.author}</h3>
+			</Link>
 
 			<TagList tags={project.tags}/>
+			
 			<p className="project__comment">{project.comment}</p>
 			</div>
 		</div>

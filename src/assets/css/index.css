@@ -47,6 +47,7 @@ body {
 	padding: 5px 10px;
 	backdrop-filter: blur(3px);
 	border-radius: 15px;
+	color: #fff;
 }
 
 .main__info {
